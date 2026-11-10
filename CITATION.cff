@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "HyperCross: a protocol-first scientific hyperspectral representation benchmark"
+abstract: >-
+  A protocol-first benchmark and experiment suite for small-sample scientific
+  hyperspectral imaging, covering whole-leaf hyperspectral regression
+  (HyperLeaf2024) and patient-grouped histology classification
+  (HistologyHSI-GB) under group-disjoint protocols.
+type: software
+license: MIT
+repository-code: "https://github.com/USERNAME/HyperCross"
+authors:
+  - family-names: "DanBai"
+    given-names: ""
+    email: "22419023@zju.edu.cn"
+    affiliation: "Zhejiang University"
+version: "0.1.0"
+date-released: "2026-11-10"
+keywords:
+  - hyperspectral imaging
+  - domain generalization
+  - representation learning
+  - scientific machine learning
+  - benchmark

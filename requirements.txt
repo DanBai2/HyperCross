@@ -1,0 +1,17 @@
+# Core scientific stack used by benchmark/ and experiments/
+numpy>=1.23
+pandas>=2.0
+scikit-learn>=1.3
+Pillow>=10.0
+tifffile>=2023.7.10
+pydantic>=2.7,<3
+torch>=2.1
+
+# Optional, for the audited CUDA environment used for all reported numbers:
+#   Python 3.10, torch 2.11.0+cu128, NVIDIA RTX 5080 (16 GB)
+# The exact environment lock of the governed runs is archived at
+#   results/governed/runs_v2/remediation/v1/deterministic-float32/hyperleaf-nested/executions/task-24-2-20261027T101633949873Z/environment-lock.json
+
+# Development
+pytest>=8.0,<9
+hypothesis>=6.100,<7

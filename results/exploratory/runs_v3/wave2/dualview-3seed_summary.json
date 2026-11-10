@@ -1,0 +1,92 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 200,
+  "consistency": 0.05,
+  "tag": "dualview-3seed",
+  "n_samples": 1590,
+  "candidates": {
+    "mlp-spec": {
+      "pooled_r2_mean_over_seeds": 0.6375,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6293,
+        "Gsw": -0.1389,
+        "PhiPS2": 0.4041
+      }
+    },
+    "dann-spec": {
+      "pooled_r2_mean_over_seeds": 0.6375,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6293,
+        "Gsw": -0.1389,
+        "PhiPS2": 0.4041
+      }
+    },
+    "pca-cnn": {
+      "pooled_r2_mean_over_seeds": -0.0126,
+      "per_target_r2_mean": {
+        "GrainWeight": -0.0126,
+        "Gsw": -0.4214,
+        "PhiPS2": -0.1186
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.0891,
+        "Gsw": -0.4573,
+        "PhiPS2": -0.1587
+      }
+    },
+    "dual-noconsistency": {
+      "pooled_r2_mean_over_seeds": 0.078,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.078,
+        "Gsw": -0.3435,
+        "PhiPS2": 0.0146
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.0577,
+        "Gsw": -0.3875,
+        "PhiPS2": -0.0204
+      }
+    },
+    "dual-consistency": {
+      "pooled_r2_mean_over_seeds": 0.0737,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.0737,
+        "Gsw": -0.3427,
+        "PhiPS2": 0.009
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.0645,
+        "Gsw": -0.3914,
+        "PhiPS2": -0.0291
+      }
+    },
+    "dual-consistency-dann": {
+      "pooled_r2_mean_over_seeds": 0.0486,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.0486,
+        "Gsw": -0.3863,
+        "PhiPS2": -0.0118
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.0352,
+        "Gsw": -0.4137,
+        "PhiPS2": -0.0216
+      }
+    }
+  }
+}

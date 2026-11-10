@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hypercross-benchmark"
+version = "0.1.0"
+description = "Protocol-first hyperspectral benchmark infrastructure for HyperCross"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "pydantic>=2.7,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "hypothesis>=6.100,<7",
+  "pytest>=8.0,<9",
+]
+
+[project.scripts]
+hypercross-benchmark = "benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["benchmark*"]
+
+[tool.setuptools.package-data]
+benchmark = ["py.typed"]
+
+[tool.pytest.ini_options]
+addopts = [
+  "-ra",
+  "-m",
+  "not gpu and not slow and not strict",
+]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+markers = [
+  "unit: isolated deterministic tests for one module or component",
+  "property: Hypothesis property-based tests (CI profile uses at least 100 examples)",
+  "integration: bounded tests spanning multiple benchmark components",
+  "regression: deterministic tests that preserve a previously fixed behavior",
+  "smoke: bounded end-to-end viability checks that never consume formal evaluation budget",
+  "audit: evidence, provenance, leakage, and artifact-integrity checks",
+  "gpu: tests that require the audited TCFM CUDA environment and one RTX 5080",
+  "slow: tests unsuitable for the ordinary test run because of runtime or resource cost",
+  "strict: formal strict-protocol or complete-training checks; implies slow",
+]
+
+[tool.coverage.run]
+source = ["benchmark"]
+branch = true

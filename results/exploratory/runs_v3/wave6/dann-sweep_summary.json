@@ -1,0 +1,124 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "lams": [
+    0.1,
+    0.3,
+    1.0
+  ],
+  "tag": "dann-sweep",
+  "candidates": {
+    "mlp-spec": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6293,
+        "Gsw": -0.1389,
+        "PhiPS2": 0.4041
+      }
+    },
+    "dann-spec-lam0.1": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6428,
+        "Gsw": -0.0732,
+        "PhiPS2": 0.4171
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6337,
+        "Gsw": -0.0855,
+        "PhiPS2": 0.4151
+      }
+    },
+    "dann-spec-lam0.3": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6442,
+        "Gsw": -0.02,
+        "PhiPS2": 0.4366
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6383,
+        "Gsw": -0.0215,
+        "PhiPS2": 0.4252
+      }
+    },
+    "dann-spec-lam1.0": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6057,
+        "Gsw": 0.0523,
+        "PhiPS2": 0.4308
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.5907,
+        "Gsw": 0.0308,
+        "PhiPS2": 0.4171
+      }
+    },
+    "dann-fusion-lam0.1": {
+      "per_target_r2_mean": {
+        "GrainWeight": -0.0996,
+        "Gsw": -0.4811,
+        "PhiPS2": -0.0743
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.1138,
+        "Gsw": -0.5034,
+        "PhiPS2": -0.0881
+      }
+    },
+    "dann-fusion-lam0.3": {
+      "per_target_r2_mean": {
+        "GrainWeight": -0.0875,
+        "Gsw": -0.3999,
+        "PhiPS2": -0.1129
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.1563,
+        "Gsw": -0.5066,
+        "PhiPS2": -0.1528
+      }
+    },
+    "dann-fusion-lam1.0": {
+      "per_target_r2_mean": {
+        "GrainWeight": -0.4822,
+        "Gsw": -0.0754,
+        "PhiPS2": -0.0674
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -1.225,
+        "Gsw": -0.1393,
+        "PhiPS2": -0.1754
+      }
+    },
+    "dann-fusion-spec-lam0.3": {
+      "per_target_r2_mean": {
+        "GrainWeight": -0.1156,
+        "Gsw": -0.3669,
+        "PhiPS2": -0.056
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.1586,
+        "Gsw": -0.4569,
+        "PhiPS2": -0.0682
+      }
+    },
+    "fusion-concat": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.576,
+        "Gsw": -0.1628,
+        "PhiPS2": 0.4104
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.5651,
+        "Gsw": -0.1747,
+        "PhiPS2": 0.4044
+      }
+    }
+  }
+}

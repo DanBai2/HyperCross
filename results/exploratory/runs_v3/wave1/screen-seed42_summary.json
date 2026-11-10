@@ -1,0 +1,128 @@
+{
+  "device": "cuda",
+  "seeds": [
+    42
+  ],
+  "epochs": 200,
+  "tag": "screen-seed42",
+  "n_samples": 1590,
+  "candidates": {
+    "ridge-spec": {
+      "pooled_r2_mean_over_seeds": 0.3439,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.3439,
+        "Gsw": -0.1654,
+        "PhiPS2": 0.48
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.3439,
+        "Gsw": -0.1654,
+        "PhiPS2": 0.48
+      }
+    },
+    "ridge-phys": {
+      "pooled_r2_mean_over_seeds": NaN,
+      "per_target_r2_mean": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      },
+      "per_target_r2_min": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      }
+    },
+    "mlp-spec": {
+      "pooled_r2_mean_over_seeds": 0.6413,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6413,
+        "Gsw": -0.1124,
+        "PhiPS2": 0.4142
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6413,
+        "Gsw": -0.1124,
+        "PhiPS2": 0.4142
+      }
+    },
+    "mlp-phys": {
+      "pooled_r2_mean_over_seeds": NaN,
+      "per_target_r2_mean": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      },
+      "per_target_r2_min": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      }
+    },
+    "cnn-rgb": {
+      "pooled_r2_mean_over_seeds": -0.0902,
+      "per_target_r2_mean": {
+        "GrainWeight": -0.0902,
+        "Gsw": -0.5367,
+        "PhiPS2": -0.0419
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.0902,
+        "Gsw": -0.5367,
+        "PhiPS2": -0.0419
+      }
+    },
+    "fusion-concat": {
+      "pooled_r2_mean_over_seeds": NaN,
+      "per_target_r2_mean": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      },
+      "per_target_r2_min": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      }
+    },
+    "fusion-valueonly": {
+      "pooled_r2_mean_over_seeds": NaN,
+      "per_target_r2_mean": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      },
+      "per_target_r2_min": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      }
+    },
+    "fusion-crossattn": {
+      "pooled_r2_mean_over_seeds": NaN,
+      "per_target_r2_mean": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      },
+      "per_target_r2_min": {
+        "GrainWeight": NaN,
+        "Gsw": NaN,
+        "PhiPS2": NaN
+      }
+    },
+    "dann-spec": {
+      "pooled_r2_mean_over_seeds": 0.6463,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6463,
+        "Gsw": -0.0215,
+        "PhiPS2": 0.4332
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6463,
+        "Gsw": -0.0215,
+        "PhiPS2": 0.4332
+      }
+    }
+  }
+}

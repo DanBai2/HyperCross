@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "task_id": "24.3",
+  "status": "frozen_before_outer_evaluation",
+  "registry_factory": "benchmark.runners.hyperleaf_optimization_registry.build_hyperleaf_optimization_plan",
+  "workspace": "G:/Datasets/HyperCross",
+  "baseline": {
+    "task_id": "24.2",
+    "execution_id": "task-24-2-20261027T101633949873Z",
+    "claim_status": "primary_strict",
+    "dataset_hash": "66b78e98dca72c272f5dd764e2c72b2543e4be4c7f47a49bf97a01fa8714efd1",
+    "protocol_hash": "b22c46f6b44d2824f672b73aab331799642d776e5b7ce296614db2270586bcdf",
+    "protocol_artifact": "runs_v2/remediation/v1/deterministic-float32/hyperleaf-nested/executions/task-24-2-20261027T101633949873Z/protocol.canonical.json",
+    "protocol_artifact_hash": "5da27d466a0b984dc4a7eb374e0d4e912edb532261f39c15034d7fcade9b3405"
+  },
+  "comparison_identity": {
+    "context_hash": "b14529679ce51a6b8157b2c49e74da2dc8d237838792b377bf98ce7dec1c0fc8",
+    "fold_ids": ["outer-heerup", "outer-kvium", "outer-rembrandt", "outer-sheriff"],
+    "seed_set": [7, 42, 123],
+    "metric_configuration_hash": "2278f5a672f560ed7388eab514a3acd5bb6e2d0f7b956c3a995223a1c2578b2a",
+    "resource_budget_hash": "3a48398aaacbad773cad87abfa3366c4554aed6f50b2dec3cdc1c182af662d4c",
+    "precision_profile": "configs/remediation/v1/deterministic-float32.json",
+    "precision_profile_config_hash": "6a546010f4ba2793e5dc6150376b4be482fed918f5e5fd6bda19d3f207043fe9",
+    "precision_identity_hash": "46f0fecc6052f6a510128abbb07c2b09ba14e0536bd3f8c94f430d25ff7b1886",
+    "tie_break_rule": "candidate_id_utf8_ascending",
+    "epoch_tie_break_rule": "earliest_epoch",
+    "recovery_policy_hash": "101c3987b3811a1564091f7d92ec2751ae67e15d32d142e37cc8efed2a5670f7",
+    "device_identity": "cuda:0:NVIDIA GeForce RTX 5080",
+    "process_count": 1
+  },
+  "paths": {
+    "output_root": "runs_v2/optimization/hyperleaf/v1/deterministic-float32",
+    "recovery_root": "runs_v2/optimization/hyperleaf/v1/deterministic-float32/recovery",
+    "artifact_root": "artifacts/optimization/hyperleaf/v1/deterministic-float32"
+  },
+  "seals": {
+    "official_labels_allowed": false,
+    "solution_csv_allowed": false,
+    "outer_metrics_allowed_for_selection": false,
+    "legacy_outer_metrics_allowed_for_selection": false
+  },
+  "registry_hashes": {
+    "plan_hash": "e91255ed50f78ac7248b502e9e093eb0aa52c8754bba03d1015d61dbac855b2f",
+    "model_registry_hash": "a76a03bfa9263d386ba383be8b9899a82f70eaad2cca7293f2e61735a7914041",
+    "candidate_space_hash": "f0e6de1c9d3e32bff27090cef727555abc339e7e14eb3d033c2bfb2ba4d093f8",
+    "frozen_candidate_registry_hash": "d9fbad0b8f02d18077576730658d1394cfa3333c121a46d584fbbf041499e365"
+  },
+  "candidate_configuration_hashes": {
+    "candidate::pca-consistency-consistency::mse": "4acaad7d50efce658f24d6e33d6f82038e8b62ee82088bea1f8104ac1053e692",
+    "candidate::pca-consistency-pca::consistency-010": "caae0fc40d689cf81160321867b3435088f6b5da3eac13c2187a6d9004e07cce",
+    "candidate::pca-consistency-pca::heteroscedastic": "59ac8b82258b9274ec23e958c513ee8979a3f6e3b0438ee02801b8b877c4b2fa",
+    "candidate::pca-consistency-pca::target-balanced": "17041d9ea5e181dc45a610761cf7d46ed08c439a23ceb4ec8a42c1d73194833f",
+    "candidate::pca-consistency-pca::variety-robust": "765f8513ac45c3d0985669600668a9f98da3ca1741d51e4f4cadb814d535601b",
+    "candidate::pca-gated-pca::mse": "2738adcdfd950990c1197d022c933f52279b3e4975af64b5d521ee7315f01c90",
+    "control::pca-consistency-pca::consistency-005": "77d86c920ddd1e4f3a1ee97041c757e820f49e931b5d4d24de0e29ebafdb5c9d",
+    "control::pca-only::mse::standard-normalization": "fff9103e48424841ebec0e2cf577ee265ee63698f30abb2f882ee16f36c7283a",
+    "control::rgb-only::mse::standard-normalization": "e52ac778f557a0e8fcd0ea1cd0bac47d8df80f481327d67d7e0d23d4dbb6158c",
+    "fallback::task-24.2::rgb-consistency-pca": "c6dcae93653105bec50fda8cae197693ded3cf7dd9a4cef7822bb4114754bd41"
+  },
+  "promotion_guard": {
+    "evidence_scope": "nested_inner_oof_only",
+    "metric_scope": "per_seed_pooled_oof",
+    "gsw_mean_delta_r2_minimum": 0.0100,
+    "gsw_each_seed_delta_strictly_positive": true,
+    "grainweight_mean_delta_r2_minimum": -0.0100,
+    "phips2_mean_delta_r2_minimum": -0.0100,
+    "failed_guard_disposition": "retain_as_negative_evidence_no_outer_revival",
+    "fallback_candidate_id": "fallback::task-24.2::rgb-consistency-pca"
+  },
+  "screening_schedule": [
+    {
+      "stage": "paired-screen-20-epochs",
+      "all_seeds": [7, 42, 123],
+      "all_inner_variety_folds": true,
+      "equal_budget_per_candidate": true,
+      "maximum_new_candidate_families_advanced": 3,
+      "tie_break_rule": "candidate_id_utf8_ascending"
+    },
+    {
+      "stage": "promotion-screen-80-epochs",
+      "all_seeds": [7, 42, 123],
+      "all_inner_variety_folds": true,
+      "equal_budget_per_candidate": true,
+      "apply_exact_promotion_guard": true,
+      "tie_break_rule": "candidate_id_utf8_ascending"
+    }
+  ],
+  "historical_design_basis": {
+    "gsw_r2": "0.09112 ± 0.01013",
+    "delta_vs_consistency_005": 0.000776,
+    "selection_score_allowed": false,
+    "outer_metric_revival_allowed": false
+  }
+}

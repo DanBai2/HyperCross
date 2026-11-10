@@ -1,0 +1,314 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 200,
+  "variants": [
+    "fold-z",
+    "snv",
+    "snv-pca32",
+    "msc",
+    "snv-d1-cr-z"
+  ],
+  "n_samples": 1590,
+  "tag": "representation-routing",
+  "evidence_grade": "exploratory",
+  "outer_metrics": {
+    "fold-z": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0058,
+        "Gsw": 0.0142,
+        "PhiPS2": 0.0085
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.6293,
+          "Gsw": -0.1061,
+          "PhiPS2": 0.4248
+        },
+        {
+          "GrainWeight": 0.6413,
+          "Gsw": -0.1124,
+          "PhiPS2": 0.4142
+        },
+        {
+          "GrainWeight": 0.6419,
+          "Gsw": -0.1389,
+          "PhiPS2": 0.4041
+        }
+      ]
+    },
+    "snv": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.6252,
+        "Gsw": 0.1075,
+        "PhiPS2": 0.48
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0009,
+        "Gsw": 0.0014,
+        "PhiPS2": 0.0001
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.6257,
+          "Gsw": 0.1078,
+          "PhiPS2": 0.4801
+        },
+        {
+          "GrainWeight": 0.626,
+          "Gsw": 0.1057,
+          "PhiPS2": 0.4801
+        },
+        {
+          "GrainWeight": 0.6239,
+          "Gsw": 0.1091,
+          "PhiPS2": 0.4798
+        }
+      ]
+    },
+    "snv-pca32": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.2557,
+        "Gsw": -0.3088,
+        "PhiPS2": 0.4284
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0839,
+        "Gsw": 0.0372,
+        "PhiPS2": 0.0292
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.3458,
+          "Gsw": -0.3273,
+          "PhiPS2": 0.3871
+        },
+        {
+          "GrainWeight": 0.1438,
+          "Gsw": -0.3423,
+          "PhiPS2": 0.4503
+        },
+        {
+          "GrainWeight": 0.2775,
+          "Gsw": -0.2569,
+          "PhiPS2": 0.4477
+        }
+      ]
+    },
+    "msc": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.6034,
+        "Gsw": -0.0843,
+        "PhiPS2": 0.4539
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0028,
+        "Gsw": 0.0186,
+        "PhiPS2": 0.001
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.6064,
+          "Gsw": -0.1059,
+          "PhiPS2": 0.4542
+        },
+        {
+          "GrainWeight": 0.5997,
+          "Gsw": -0.0604,
+          "PhiPS2": 0.4525
+        },
+        {
+          "GrainWeight": 0.604,
+          "Gsw": -0.0866,
+          "PhiPS2": 0.455
+        }
+      ]
+    },
+    "snv-d1-cr-z": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.5027,
+        "Gsw": -0.1858,
+        "PhiPS2": 0.502
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0277,
+        "Gsw": 0.0298,
+        "PhiPS2": 0.0052
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.5195,
+          "Gsw": -0.1912,
+          "PhiPS2": 0.5091
+        },
+        {
+          "GrainWeight": 0.5249,
+          "Gsw": -0.1469,
+          "PhiPS2": 0.5
+        },
+        {
+          "GrainWeight": 0.4636,
+          "Gsw": -0.2194,
+          "PhiPS2": 0.4968
+        }
+      ]
+    }
+  },
+  "inner_score": {
+    "GrainWeight": {
+      "fold-z": {
+        "Heerup": 0.5526,
+        "Kvium": 0.6125,
+        "Rembrandt": 0.6606,
+        "Sheriff": 0.5051
+      },
+      "snv": {
+        "Heerup": 0.5605,
+        "Kvium": 0.59,
+        "Rembrandt": 0.5561,
+        "Sheriff": 0.5141
+      },
+      "snv-pca32": {
+        "Heerup": 0.4785,
+        "Kvium": 0.1125,
+        "Rembrandt": 0.1883,
+        "Sheriff": -0.0549
+      },
+      "msc": {
+        "Heerup": 0.6188,
+        "Kvium": 0.5831,
+        "Rembrandt": 0.5505,
+        "Sheriff": 0.4907
+      },
+      "snv-d1-cr-z": {
+        "Heerup": 0.5415,
+        "Kvium": 0.4977,
+        "Rembrandt": 0.5239,
+        "Sheriff": 0.4022
+      }
+    },
+    "Gsw": {
+      "fold-z": {
+        "Heerup": -0.2425,
+        "Kvium": -0.3617,
+        "Rembrandt": -0.3376,
+        "Sheriff": 0.0322
+      },
+      "snv": {
+        "Heerup": 0.0402,
+        "Kvium": 0.0535,
+        "Rembrandt": 0.0937,
+        "Sheriff": 0.1306
+      },
+      "snv-pca32": {
+        "Heerup": -0.2949,
+        "Kvium": -0.2747,
+        "Rembrandt": -0.4421,
+        "Sheriff": -0.4055
+      },
+      "msc": {
+        "Heerup": -0.1173,
+        "Kvium": -0.1434,
+        "Rembrandt": -0.0876,
+        "Sheriff": -0.1285
+      },
+      "snv-d1-cr-z": {
+        "Heerup": -0.1985,
+        "Kvium": -0.1162,
+        "Rembrandt": -0.1934,
+        "Sheriff": -0.2997
+      }
+    },
+    "PhiPS2": {
+      "fold-z": {
+        "Heerup": 0.408,
+        "Kvium": 0.3847,
+        "Rembrandt": 0.3978,
+        "Sheriff": 0.301
+      },
+      "snv": {
+        "Heerup": 0.5401,
+        "Kvium": 0.4042,
+        "Rembrandt": 0.4484,
+        "Sheriff": 0.4239
+      },
+      "snv-pca32": {
+        "Heerup": 0.4488,
+        "Kvium": 0.0408,
+        "Rembrandt": 0.3976,
+        "Sheriff": 0.256
+      },
+      "msc": {
+        "Heerup": 0.5179,
+        "Kvium": 0.4279,
+        "Rembrandt": 0.3822,
+        "Sheriff": 0.3583
+      },
+      "snv-d1-cr-z": {
+        "Heerup": 0.5183,
+        "Kvium": 0.4251,
+        "Rembrandt": 0.4425,
+        "Sheriff": 0.3946
+      }
+    }
+  },
+  "selected_route": {
+    "GrainWeight": {
+      "Heerup": "msc",
+      "Kvium": "fold-z",
+      "Rembrandt": "fold-z",
+      "Sheriff": "snv"
+    },
+    "Gsw": {
+      "Heerup": "snv",
+      "Kvium": "snv",
+      "Rembrandt": "snv",
+      "Sheriff": "snv"
+    },
+    "PhiPS2": {
+      "Heerup": "snv",
+      "Kvium": "msc",
+      "Rembrandt": "snv",
+      "Sheriff": "snv"
+    }
+  },
+  "routed_policy": {
+    "pooled_r2_mean_over_seeds": {
+      "GrainWeight": 0.6046,
+      "Gsw": 0.1075,
+      "PhiPS2": 0.4442
+    },
+    "per_seed_pooled": [
+      {
+        "GrainWeight": 0.598,
+        "Gsw": 0.1078,
+        "PhiPS2": 0.4431
+      },
+      {
+        "GrainWeight": 0.604,
+        "Gsw": 0.1057,
+        "PhiPS2": 0.4443
+      },
+      {
+        "GrainWeight": 0.6117,
+        "Gsw": 0.1091,
+        "PhiPS2": 0.4452
+      }
+    ]
+  },
+  "best_single_variant_for_gsw": "snv",
+  "outer_metric_oracle_reference_only": {
+    "GrainWeight": 0.6375,
+    "Gsw": 0.1075,
+    "PhiPS2": 0.502
+  }
+}

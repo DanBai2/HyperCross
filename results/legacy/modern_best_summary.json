@@ -1,0 +1,13 @@
+{
+  "run": "G:/Datasets/HyperCross/runs/modern_benchmarks_20261005_232922",
+  "leaf": {
+    "SpectralTransformer": {"best_epoch": 29, "r2_mean": 0.359412282705307, "r2": [0.6783962249755859, 0.11963409185409546, 0.28020644187927246]},
+    "TinyViT": {"best_epoch": 27, "r2_mean": 0.24383527040481567, "r2": [0.5159286260604858, 0.033060550689697266, 0.18251663446426392]},
+    "FiLMFusion": {"best_epoch": 24, "r2_mean": 0.3720737397670746, "r2": [0.7116094827651978, 0.08126974105834961, 0.3233420252799988]}
+  },
+  "hist": {
+    "SpectralTransformer": {"best_epoch": 27, "accuracy": 0.837837815284729},
+    "TinyViT": {"best_epoch": 14, "accuracy": 0.7837837934494019},
+    "FiLMFusion": {"best_epoch": 4, "accuracy": 0.7837837934494019}
+  }
+}

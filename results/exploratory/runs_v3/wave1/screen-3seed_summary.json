@@ -1,0 +1,130 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 200,
+  "tag": "screen-3seed",
+  "n_samples": 1590,
+  "candidates": {
+    "ridge-spec": {
+      "pooled_r2_mean_over_seeds": 0.3439,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.3439,
+        "Gsw": -0.1654,
+        "PhiPS2": 0.48
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.3439,
+        "Gsw": -0.1654,
+        "PhiPS2": 0.48
+      }
+    },
+    "ridge-phys": {
+      "pooled_r2_mean_over_seeds": 0.0794,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.0794,
+        "Gsw": -1.2088,
+        "PhiPS2": 0.3143
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.0146,
+        "Gsw": -1.2164,
+        "PhiPS2": 0.2786
+      }
+    },
+    "mlp-spec": {
+      "pooled_r2_mean_over_seeds": 0.6375,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6293,
+        "Gsw": -0.1389,
+        "PhiPS2": 0.4041
+      }
+    },
+    "mlp-phys": {
+      "pooled_r2_mean_over_seeds": 0.4851,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.4851,
+        "Gsw": -0.2306,
+        "PhiPS2": 0.5074
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.4773,
+        "Gsw": -0.2787,
+        "PhiPS2": 0.5003
+      }
+    },
+    "cnn-rgb": {
+      "pooled_r2_mean_over_seeds": -0.0387,
+      "per_target_r2_mean": {
+        "GrainWeight": -0.0387,
+        "Gsw": -0.4339,
+        "PhiPS2": -0.0564
+      },
+      "per_target_r2_min": {
+        "GrainWeight": -0.0902,
+        "Gsw": -0.5369,
+        "PhiPS2": -0.0886
+      }
+    },
+    "fusion-concat": {
+      "pooled_r2_mean_over_seeds": 0.5759,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.5759,
+        "Gsw": -0.1628,
+        "PhiPS2": 0.4104
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.565,
+        "Gsw": -0.1747,
+        "PhiPS2": 0.4044
+      }
+    },
+    "fusion-valueonly": {
+      "pooled_r2_mean_over_seeds": 0.5861,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.5861,
+        "Gsw": -0.1425,
+        "PhiPS2": 0.4159
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.5769,
+        "Gsw": -0.1551,
+        "PhiPS2": 0.4127
+      }
+    },
+    "fusion-crossattn": {
+      "pooled_r2_mean_over_seeds": 0.5743,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.5743,
+        "Gsw": -0.1529,
+        "PhiPS2": 0.4223
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.5691,
+        "Gsw": -0.1931,
+        "PhiPS2": 0.4135
+      }
+    },
+    "dann-spec": {
+      "pooled_r2_mean_over_seeds": 0.6442,
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6442,
+        "Gsw": -0.02,
+        "PhiPS2": 0.4366
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6383,
+        "Gsw": -0.0215,
+        "PhiPS2": 0.4252
+      }
+    }
+  }
+}

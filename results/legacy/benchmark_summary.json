@@ -1,0 +1,446 @@
+{
+  "hist_patient_split": {
+    "concat": 0.837837815284729,
+    "routeA": 0.8243243098258972,
+    "routeA_balanced": 0.8175675868988037,
+    "hybrid": 0.8243243098258972,
+    "mil_concat_local_tokens": 0.912162184715271,
+    "routeA_mil_seed42": 0.9189189076423645,
+    "routeA_mil_seed123": 0.912162184715271,
+    "routeA_mil_seed7": 0.9256756901741028,
+    "routeA_mil_3seed_mean": 0.9189189275105795,
+    "routeA_mil_3seed_std": 0.006756752729437801,
+    "routeA_mil_local_alignment": 0.912162184715271,
+    "ensemble_0_1": 0.8108108043670654,
+    "ensemble_0_2": 0.7837837934494019,
+    "ensemble_0_1_2": 0.7837837934494019
+  },
+  "leaf_random_split": {
+    "concat": 0.29264935851097107,
+    "routeA": 0.5609901547431946,
+    "ensemble_mean": 0.5019834637641907,
+    "routeA_3seed_mean": 0.5420658191045126,
+    "routeA_3seed_std": 0.016781587433622513,
+    "modern_spectral_transformer": 0.359412282705307,
+    "modern_tiny_vit": 0.24383527040481567,
+    "modern_film": 0.3720737397670746,
+    "routeA_mil_local_tokens": 0.45396503806114197
+    ,"hybridsn_lite": 0.07625424861907959
+    ,"s2mamba_lite": 0.05208587646484375
+    ,"mamtrans_lite": 0.26638373732566833
+    ,"masked_routeA_scratch": 0.452352076768875
+    ,"masked_routeA_pretrained": 0.449916124343872
+    ,"local_mamtrans": 0.491266757249832
+    ,"globalv_local_spectral": 0.480797499418259
+    ,"spectralformer_official_caf": 0.2585830092430115
+  },
+  "modern_hist_patient_split": {
+    "spectral_transformer": 0.837837815284729,
+    "tiny_vit": 0.7837837934494019,
+    "film": 0.7837837934494019,
+    "hybridsn_lite": 0.6756756901741028,
+    "s2mamba_lite": 0.6756756901741028,
+    "mamtrans_lite": 0.9324324131011963,
+    "mamtrans_lite_seed42": 0.925675690174103,
+    "mamtrans_lite_seed123": 0.72972971200943,
+    "mamtrans_lite_seed7": 0.959459483623505,
+    "mamtrans_lite_3seed_mean": 0.871621628602346,
+    "mamtrans_lite_3seed_std": 0.10127626629099314,
+    "masked_routeA_scratch": 0.918918907642365,
+    "masked_routeA_pretrained": 0.918918907642365,
+    "local_mamtrans": 0.905405402183533,
+    "globalv_local_spectral": 0.8986486191749573
+    ,"routeA_mamtrans_equal_ensemble": 0.9391891891891891
+    ,"spectralformer_official_caf": 0.918918907642365
+    ,"routeA_modality_dropout_p0.2_full": 0.912162184715271
+    ,"routeA_modality_dropout_p0.2_visual_only": 0.6756756901741028
+    ,"routeA_modality_dropout_p0.2_spectral_only": 0.9189189076423645
+    ,"alternate_patient_split": {
+      "val_patients": ["P1", "P4", "P6", "P9"],
+      "n_val": 180,
+      "routeA": 0.8666666746139526,
+      "mamtrans": 0.6777777671813965,
+      "equal_ensemble": 0.855555534362793
+    },
+    "patient_5fold_cv": {
+      "routeA_mean": 0.9153085947036743,
+      "routeA_std": 0.06864378223683872,
+      "mil_concat_mean": 0.889540696144104,
+      "mil_concat_std": 0.059461306931246447,
+      "routeA_values": [1.0, 0.9603960514068604, 0.8604651093482971, 0.9431818127632141, 0.8125],
+      "mil_concat_values": [1.0, 0.8613861203193665, 0.8604651093482971, 0.8977272510528564, 0.828125]
+    },
+    "patient_5fold_oof_metrics": {
+      "routeA": {
+        "accuracy": 0.929637526652452,
+        "balanced_accuracy": 0.9101355918724403,
+        "sensitivity": 0.8433734939759037,
+        "specificity": 0.976897689768977,
+        "auroc": 0.9026999085450714,
+        "ece_10bin": 0.12799826372406883
+      },
+      "mil_concat": {
+        "accuracy": 0.9019189765458422,
+        "balanced_accuracy": 0.8668933158376078,
+        "sensitivity": 0.7469879518072289,
+        "specificity": 0.9867986798679867,
+        "auroc": 0.8823810091852559,
+        "ece_10bin": 0.08575267120719207
+      },
+      "mil_concat_best_balanced_threshold": 0.45
+    },
+    "patient_5fold_balanced_oof": {
+      "accuracy": 0.929637526652452,
+      "balanced_accuracy": 0.9046880591673625,
+      "sensitivity": 0.8192771084337349,
+      "specificity": 0.9900990099009901,
+      "auroc": 0.8956618553421607,
+      "ece_10bin": 0.18656791514679313
+    },
+    "lopo_fixed_20ep_oof": {
+      "routeA": {
+        "accuracy": 0.8805970149253731,
+        "balanced_accuracy": 0.858562964730208,
+        "sensitivity": 0.7831325301204819,
+        "specificity": 0.933993399339934,
+        "auroc": 0.8968945087279813,
+        "ece_10bin": 0.06473175091529959
+      },
+      "mil_concat": {
+        "accuracy": 0.8699360341151386,
+        "balanced_accuracy": 0.8462264901188914,
+        "sensitivity": 0.7650602409638554,
+        "specificity": 0.9273927392739274,
+        "auroc": 0.8919440136784763,
+        "ece_10bin": 0.035906547930703255
+      }
+    },
+    "patient_5fold_invariant": {
+      "mean_accuracy": 0.8960911393165588,
+      "std_accuracy": 0.057032273301696655,
+      "values": [0.9615384340286255, 0.9405940771102905, 0.8837209343910217, 0.8977272510528564, 0.796875]
+    },
+    "patient_5fold_classalign": {
+      "lambda": 0.05,
+      "mean_accuracy": 0.9056748189353818,
+      "std_accuracy": 0.05931730596994414,
+      "values": [1.0, 0.9306930693069307, 0.8604651162790697, 0.9090909090909091, 0.828125]
+    },
+    "patient_5fold_confidence": {
+      "temperature": 0.5,
+      "mean_accuracy": 0.8977118372917176,
+      "std_accuracy": 0.06552245146876061,
+      "values": [1.0, 0.9405940771102905, 0.8604651093482971, 0.875, 0.8125]
+    },
+    "patient_5fold_domainadv": {
+      "lambda": 0.1,
+      "mean_accuracy": 0.8993995039038787,
+      "std_accuracy": 0.06955206639985632,
+      "values": [1.0, 0.9603960396039604, 0.8604651162790697, 0.8636363636363636, 0.8125]
+    },
+    "patient_5fold_consistency": {
+      "lambda": 0.1,
+      "mean_accuracy": 0.9054076047139598,
+      "std_accuracy": 0.06489426990202005,
+      "values": [1.0, 0.9108910891089109, 0.8604651162790697, 0.9431818181818182, 0.8125]
+    },
+    "patient_5fold_trainnorm": {
+      "mean_accuracy": 0.89691241979599,
+      "std_accuracy": 0.06875867711383422,
+      "values": [1.0, 0.9405940771102905, 0.8720930218696594, 0.875, 0.796875]
+    },
+    "patient_5fold_patientbalanced": {
+      "mean_accuracy": 0.9022994756698608,
+      "std_accuracy": 0.05965632701549869,
+      "values": [1.0, 0.8910890817642212, 0.8604651093482971, 0.9318181872367859, 0.828125]
+    },
+    "patient_5fold_groupdro": {
+      "eta": 0.1,
+      "mean_accuracy": 0.8724996216079568,
+      "std_accuracy": 0.03848764292817328,
+      "values": [0.9076923076923077, 0.8613861386138614, 0.8604651162790697, 0.9204545454545454, 0.8125]
+    },
+    "patient_5fold_protoepisodic": {
+      "prototype_weight": 0.2,
+      "mean_accuracy": 0.6647130370140075,
+      "std_accuracy": 0.05089574663808976,
+      "values": [0.7230769395828247, 0.6435643434524536, 0.604651153087616, 0.7272727489471436, 0.625]
+    },
+    "iterative_audit": {
+      "local_mask_token_nce_fixed_accuracy": 0.912162184715271,
+      "no_alignment_5fold_mean": 0.9062176823616028,
+      "no_alignment_5fold_std": 0.0673480632570975,
+      "mid_alignment_5fold_mean": 0.9056326270103454,
+      "mid_alignment_5fold_std": 0.07227357535141289,
+      "classical_hist_svm_mean": 0.7903738694531349,
+      "classical_hist_rf_mean": 0.7879550758072229,
+      "classical_leaf_rf_r2": 0.5270672087929372,
+      "classical_leaf_leave_one_variety_rf_mean_r2": 0.2844595556929642,
+      "leaf_leave_one_variety_mean_r2": 0.2856863848865032,
+      "leaf_leave_one_variety_std_r2": 0.07070051788321967,
+      "leaf_domainadv_leave_one_variety_mean_r2": 0.2872629873454571,
+      "leaf_domainadv_leave_one_variety_std_r2": 0.06327186158881003,
+      "leaf_domainadv_w0_2_leave_one_variety_mean_r2": 0.25592048466205597,
+      "leaf_domainadv_w0_2_leave_one_variety_std_r2": 0.07215553102235603,
+      "hist_nested_routeA_outer_mean": 0.8195001602172851,
+      "hist_nested_routeA_outer_std": 0.0924760300099342,
+      "hist_nested_mil_outer_mean": 0.7896800994873047,
+      "hist_nested_mil_outer_std": 0.07990641116862851,
+      "hist_nested_routeA_oof_accuracy": 0.837953091684435,
+      "hist_nested_routeA_oof_balanced_accuracy": 0.794236351345978,
+      "hist_nested_routeA_oof_auroc": 0.8476877808262754,
+      "hist_nested_mil_oof_accuracy": 0.7995735607675906,
+      "hist_nested_mil_oof_balanced_accuracy": 0.7359338343472901,
+      "hist_nested_mil_oof_auroc": 0.7846435245934231
+      ,"leaf_meanstd_random_3seed_mean_r2": 0.5477007230122884
+      ,"leaf_meanstd_random_3seed_std_r2": 0.002737837619375583
+      ,"leaf_meanstd_variety_mean_r2": 0.2813919074833393
+      ,"leaf_meanstd_variety_std_r2": 0.05304295885912382
+      ,"leaf_crossmodal_corrected_3seed_mean_r2": 0.5648178259531657
+      ,"leaf_crossmodal_corrected_3seed_std_r2": 0.005027568538294443
+      ,"leaf_legacy_route_only_token_mean_r2": 0.5420658191045126
+      ,"leaf_token_corrected_seed42_r2": 0.2766778767108917
+      ,"leaf_regweights121_variety_mean_r2": 0.27186866477131844
+      ,"leaf_regweights121_variety_std_r2": 0.07148036970490361
+      ,"leaf_style_aug_variety_mean_r2": 0.3097585327923298
+      ,"leaf_style_aug_variety_std_r2": 0.047800089008423606
+      ,"leaf_style_aug_random_seed42_best_r2": 0.5226022601127625
+      ,"leaf_correspondence_seed42_r2": 0.2774137258529663
+      ,"leaf_stats_fusion_seed42_r2": 0.4699099063873291
+      ,"leaf_stats_residual_seed42_r2": 0.4867102801799774
+    }
+  },
+  "official_remote_sensing": {
+      "S2Mamba_reference_IndianPines_400ep": {
+      "oa": 0.9749,
+      "aa": 0.9871,
+      "kappa": 0.9712,
+      "protocol": "official demo_mamba.py, patch=7, seed=0, 400 epochs; portable reference selective scan"
+    },
+    "S2Mamba_official_HyperLeaf_adapt_30ep": {
+      "r2_mean": 0.28536951541900635,
+      "r2": [0.7698225975036621, -0.013131856918334961, 0.0994178056716919],
+      "best_epoch": 17,
+      "protocol": "seed42 random 80/20; 204 bands pooled to 7x7; official architecture with reference scan"
+    }
+  },
+  "hyperleaf_official_test": {
+    "protocol": "1590 train.csv images to 820 test.csv images; epoch selected on inner train-only split; solution.csv used once for final evaluation",
+    "selected_epoch": 27,
+    "crossmodal_routeA_r2_mean": 0.36630258957544964,
+    "crossmodal_routeA_r2": [0.668350338935852, 0.02746725082397461, 0.4030901789665222],
+    "pls_r2_mean": 0.3987718059635393,
+    "rf_r2_mean": 0.373463725968527
+  },
+  "hyperleaf_official_test_style_aug": {
+    "protocol": "1590 train.csv images to 820 test.csv images; style augmentation; epoch selected on inner train-only split; seeds 42,123,7",
+    "r2_mean_values": [0.446116507053375, 0.4417535662651062, 0.4523608287175496],
+    "r2_mean": 0.4467436340120103,
+    "r2_mean_std_sample": 0.005331366649409825,
+    "r2_per_target_mean": [0.7227679698028564, 0.11979566017786662, 0.4976672727266947],
+    "baseline_pls_r2_mean": 0.3987718059635393,
+    "baseline_rf_r2_mean": 0.373463725968527
+  },
+  "hist_nested_routeA_style_aug": {
+    "accuracy_mean": 0.8163751602172852,
+    "accuracy_std": 0.09602378417744367,
+    "pooled_oof_accuracy": 0.835820895522388,
+    "pooled_oof_balanced_accuracy": 0.7925861863294763,
+    "pooled_oof_auroc": 0.8503717841663684
+  },
+  "hyperleaf_official_test_style_aug_regweights121_seed42": {
+    "r2_mean": 0.4400915702184041,
+    "r2": [0.7237057685852051, 0.09868276119232178, 0.49788618087768555]
+  },
+  "hyperleaf_official_test_style_aug_noalign": {
+    "r2_mean_values": [0.4569856524467468, 0.43333500623703003, 0.45292945702870685],
+    "r2_mean": 0.4477500385708279,
+    "r2_mean_std_sample": 0.012647452241683331,
+    "decision": "inconclusive; negligible mean gain over default 0.44674 with higher seed variance"
+  },
+  "hyperleaf_official_test_rawmean_seed42": {
+    "r2_mean": 0.056477864583333336,
+    "r2": [0.26054883003234863, -0.08591055870056152, -0.005204677581787109]
+  },
+  "hyperleaf_official_test_globalbandnorm_seed42": {
+    "r2_mean": 0.4173202912012736,
+    "r2": [0.6817618608474731, 0.06517153978347778, 0.5050274729728699],
+    "normalization": "train.csv-only per-band mean/std"
+  },
+  "hyperleaf_official_test_inner_selected_ensemble_seed42": {
+    "r2_mean": 0.436668594678243,
+    "r2": [0.7406126260757446, 0.07915502786636353, 0.49023813009262085],
+    "decision": "negative; inner validation blend overfits and underperforms standalone style-augmented CrossModal"
+  },
+  "hyperleaf_official_test_independent_targets": {
+    "r2_mean_values": [0.4634413917859395, 0.45259873072306317, 0.44895410537719727],
+    "r2_mean": 0.4549980759666666,
+    "r2_mean_std_sample": 0.007535781990735984,
+    "r2_per_target_mean": [0.7524991037448248, 0.1287863254817327, 0.4837087988856638],
+    "seeds": [42,123,7]
+  },
+  "hyperleaf_official_test_shared_encoder_independent_heads": {
+    "r2_mean_values": [0.4577089150746663, 0.44749581813812256, 0.44214709599812824],
+    "r2_mean": 0.449117276403639,
+    "r2_mean_std_sample": 0.00790660473419754,
+    "decision": "parameter-efficient ablation; below fully independent target experts"
+  },
+  "hyperleaf_official_test_independent_targets_no_aug_seed42": {
+    "r2_mean": 0.3315805196762085,
+    "r2": [0.7267230153083801, -0.13804864883422852, 0.4060671925544739]
+  },
+  "leaf_independent_targets_strict_variety": {
+    "mean_r2": 0.27293844521045685,
+    "std_r2": 0.07108919709131535,
+    "values": [0.22111151615778604,0.33860917886098224,0.18502211570739746,0.3470109701156616],
+    "protocol": "corrected train-variety target normalization; fixed 27 epochs selected before outer evaluation; style augmentation only on outer training varieties"
+  },
+  "leaf_shared_encoder_heads_strict_variety": {
+    "mean_r2": 0.27059411505858105,
+    "std_r2": 0.05641934788857572
+  },
+  "leaf_shared_encoder_heads_strong_aug_strict_variety": {
+    "mean_r2": 0.33617246647675836,
+    "std_r2": 0.08551499689150147,
+    "values": [0.24206688006718954,0.2716211477915446,0.458177129427592,0.3728247086207072]
+  },
+  "hyperleaf_official_strong_aug_shared_heads_seed42": {
+    "r2_mean": 0.4163244167963664,
+    "r2": [0.7252820730209351,0.032279133796691895,0.49141204357147217]
+  },
+  "leaf_shared_encoder_heads_mixed_aug_p03_strict_variety": {
+    "mean_r2": 0.33586999277273836,
+    "std_r2": 0.07752191479911469,
+    "values": [0.2512756586074829,0.27540355920791626,0.4451759457588196,0.3716248075167338]
+  },
+  "hyperleaf_official_mixed_aug_p03_shared_heads_seed42": {
+    "r2_mean": 0.4187194307645162,
+    "r2": [0.7226592302322388,0.03761112689971924,0.4958879351615906]
+  },
+  "leaf_shared_encoder_heads_mixed_aug_p01_strict_variety": {
+    "mean_r2": 0.33584946393966675,
+    "std_r2": 0.07595244714154975,
+    "values": [0.24355322122573853,0.28731973965962726,0.44006621837615967,0.37245867649714154]
+  },
+  "hyperleaf_official_mixed_aug_p01_shared_heads_seed42": {
+    "r2_mean": 0.4195570945739746,
+    "r2": [0.7315658330917358,0.03560781478881836,0.49149763584136963]
+  },
+  "hyperleaf_official_adabn_seed42": {
+    "before_mean": 0.45462600390116376,
+    "after_mean": 0.44784281651179,
+    "before_r2": [0.7468231916427612,0.11203736066818237,0.5050174593925476],
+    "after_r2": [0.7417303919792175,0.10543042421340942,0.4963676333427429]
+  },
+  "hyperleaf_official_featurealign_seed42": {
+    "before_mean": 0.454694132010142,
+    "after_mean": 0.3800489107767741,
+    "before_r2": [0.746829628944397,0.11204832792282104,0.505204439163208],
+    "after_r2": [0.5500268936157227,0.11212944984436035,0.47799038887023926]
+  },
+  "hyperleaf_official_ssl_targets_seed42": {
+    "r2_mean": 0.44708343346913654,
+    "r2": [0.7342894673347473,0.12324494123458862,0.48371589183807373],
+    "ssl_loss_start": 9.743361829361826,
+    "ssl_loss_end": 5.7457547997528655
+  },
+  "leaf_independent_targets_strong_aug_strict_variety": {
+    "mean_r2": 0.29706302781899774,
+    "std_r2": 0.06966231096627488,
+    "values": [0.1926952600479126,0.32744431495666504,0.28476784626642865,0.38334469000498456],
+    "protocol": "corrected train-variety target normalization; fixed 27 epochs; independent target experts; strong RGB/spectral gain-offset augmentation only on outer training varieties"
+  },
+  "hyperleaf_official_test_independent_targets_strong_aug_seed42": {
+    "r2_mean": 0.40573062499364215,
+    "r2": [0.7181676626205444,0.029771506786346436,0.46925270557403564],
+    "selected_epochs": [27,26,28],
+    "protocol": "1590 train to 820 test; independent target experts; strong RGB/spectral gain-offset augmentation; epoch selected on inner train split"
+  },
+  "leaf_independent_targets_outerfit_pca_strict_variety": {
+    "mean_r2": 0.3186713804801305,
+    "std_r2": 0.02117064222107463,
+    "values": [0.31907951831817627,0.3522036075592041,0.2949102719624837,0.30849212408065796],
+    "protocol": "PCA fitted separately on each outer training-variety set; fixed 27 epochs; validation target normalization from outer training varieties"
+  },
+  "hyperleaf_official_test_pca_targets_seed42": {
+    "r2_mean": 0.4582782785097758,
+    "r2": [0.744100034236908,0.12266409397125244,0.508070707321167],
+    "protocol": "train-fitted global PCA pseudo-RGB; independent target heads; mild augmentation; seed 42"
+  },
+  "hyperleaf_official_test_target_routed_transformed_3seed": {
+    "r2_mean_values": [0.4795273145039876,0.4885866641998291,0.46872633695602417],
+    "r2_mean": 0.4789467718866136,
+    "r2_mean_std_sample": 0.009942882975057871,
+    "r2_per_target_mean": [0.7524991035461426,0.17367106676101685,0.5106701453526815],
+    "protocol": "target-routed exploratory configuration: visible RGB for GrainWeight, visible RGB with asinh(y/0.05) for Gsw, train-fitted PCA pseudo-RGB for PhiPS2"
+  },
+  "leaf_gsw_asinh_pca_outer_strict_variety": {
+    "mean_r2": -0.12444561719894409,
+    "std_r2": 0.274107834898551,
+    "values": [0.14706194400787354,0.057526469230651855,-0.5643618106842041,-0.13800907135009766]
+  },
+  "leaf_gsw_huber_pca_outer_strict_variety": {
+    "mean_r2": -0.1200355738401413,
+    "std_r2": 0.17593684630939777,
+    "values": [-0.008840084075927734,0.10406094789505005,-0.23757648468017578,-0.3377866744995117]
+  },
+  "leaf_independent_targets_pca_noalign_strict_variety": {
+    "mean_r2": 0.29452510674794513,
+    "std_r2": 0.04991247121739208,
+    "values": [0.29829885562260944,0.3625837564468384,0.29561465978622437,0.2216031551361084],
+    "protocol": "global PCA pseudo-RGB; fixed 27 epochs; independent experts; pooled alignment and InfoNCE disabled"
+  },
+  "leaf_target_routed_rgb_pca_consistency_outer_strict_variety": {
+    "mean_r2": 0.33601444959640503,
+    "std_r2": 0.032321233527695344,
+    "target_means": [0.5072179287672043,0.010300889611244202,0.4905245304107666],
+    "protocol": "GrainWeight and Gsw use RGB/PCA prediction consistency with outer-fit PCA; PhiPS2 uses outer-fit PCA single view"
+  },
+  "hyperleaf_official_test_target_routed_rgb_pca_consistency_3seed": {
+    "r2_mean_values": [0.4842812021573385,0.4772369066874186,0.47760321696662855],
+    "r2_mean": 0.4797071086037952,
+    "r2_mean_std_sample": 0.003965513167791109,
+    "r2_per_target_mean": [0.7524991035461426,0.17595207691192627,0.5106701453526815],
+    "protocol": "GrainWeight visible RGB; Gsw RGB/PCA consistency weight .1; PhiPS2 train-fitted PCA pseudo-RGB; seeds 42/123/7"
+  },
+  "hyperleaf_view_branch_analysis_seed42": {
+    "GrainWeight": {"average":0.7553325295448303,"rgb":0.7518927454948425,"pca":0.7450929880142212,"best_fixed_blend":0.7553325295448303,"pca_weight":0.5},
+    "Gsw": {"average":0.18753081560134888,"rgb":0.17860734462738037,"pca":0.14641118049621582,"best_fixed_blend":0.18932437896728516,"pca_weight":0.25},
+    "PhiPS2": {"average":0.5160245895385742,"rgb":0.4909508228302002,"pca":0.517048716545105,"best_fixed_blend":0.5195428133010864,"pca_weight":0.75},
+    "selection_note": "seed-42 diagnostic; fixed weights require multi-seed validation before replacing the three-seed primary result"
+  },
+  "leaf_gsw_nested_rgb_pca_route_strict_variety": {
+    "mean_r2": -0.0992625504732132,
+    "std_r2": 0.2533707850808389,
+    "values": [0.17266380786895752,0.07505720853805542,-0.4850015640258789,-0.15976965427398682],
+    "protocol": "nested inner-variety selection among RGB, PCA, and RGB/PCA consistency; fixed inner 15 and outer 27 epochs"
+  },
+  "leaf_gsw_rgb_pca_consistency_cons005_strict_variety": {
+    "mean_r2": 0.005264446139335632,
+    "std_r2": 0.13661472050973492,
+    "values": [0.17223197221755981,0.09438693523406982,-0.17774558067321777,-0.06781554222106934],
+    "protocol": "outer-fit PCA; RGB/PCA consistency weight 0.05; fixed 27 epochs"
+  },
+  "hyperleaf_official_modern_baselines_seed42": {
+    "protocol": "official 1590 train to 820 test; compact modern HSI baselines; epoch selected on inner train split; no augmentation",
+    "HybridSN_lite": {"r2_mean": -0.012068589528401693,"r2": [0.025979161262512207,-0.08269286155700684,0.02050793170928955]},
+    "S2Mamba_lite": {"r2_mean": -0.01661870876948039,"r2": [0.014041483402252197,-0.08287715911865234,0.018979549407958984]},
+    "MamTrans_lite": {"r2_mean": 0.31775538126627606,"r2": [0.7127848863601685,-0.04420936107635498,0.28469061851501465]}
+  },
+  "hist_nested_rgb_pca_consistency": {
+    "protocol": "nested patient CV; PCA fitted on all non-outer patients from cached 128-bin spectra; RGB/PCA consistency versus matched global RouteA; pooled OOF",
+    "consistency": {"accuracy":0.8486140724946695,"balanced_accuracy":0.8406199053640304,"auroc":0.9330390870412343,"confusion_matrix":[[263,40],[31,135]]},
+    "rgb_branch": {"accuracy":0.7739872068230277,"balanced_accuracy":0.7787784802576643,"auroc":0.8803928585629648},
+    "pca_branch_only": {"accuracy":0.8763326226012793,"balanced_accuracy":0.8675195832836295,"auroc":0.9453855024056622,"confusion_matrix":[[272,31],[27,139]]},
+    "fixed_blend_075_pca": {"accuracy":0.8592750533049041,"balanced_accuracy":0.8475088472702692,"auroc":0.9428009065966838},
+    "matched_global_routeA": {"accuracy":0.7654584221748401,"balanced_accuracy":0.7721778201916577,"auroc":0.8520617121953159,"confusion_matrix":[[227,76],[34,132]]},
+    "fold_accuracy_consistency": [0.9615384615384616,0.9405940594059405,0.8604651162790697,0.7386363636363636,0.609375],
+    "fold_accuracy_routeA": [0.8923076923076924,0.9306930693069307,0.8023255813953488,0.5340909090909091,0.515625]
+  },
+  "hist_nested_rgb_pca_consistency_fullcube": {
+    "protocol": "nested patient CV; full-cube 12x16 spatial spectral PCA fitted on non-outer patients; pooled OOF",
+    "consistency": {"accuracy":0.8272921108742004,"balanced_accuracy":0.8241182551990138,"auroc":0.9181279573740508,"confusion_matrix":[[253,50],[31,135]]},
+    "matched_global_routeA": {"accuracy":0.7654584221748401,"balanced_accuracy":0.7721778201916577,"auroc":0.8520815937015388,"confusion_matrix":[[227,76],[34,132]]},
+    "fold_accuracy_consistency": [0.9538461538461539,0.9405940594059405,0.8837209302325582,0.6477272727272727,0.5625]
+  }
+}

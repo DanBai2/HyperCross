@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "stage": "strict",
+  "conda_environment": "TCFM",
+  "environment_lock_artifact": "artifacts/audit/training_fast_lane_audit.json",
+  "environment_lock_hash": "a381dbcd2b3aaf8723b92ce4ed7f44c95d039ff46c04e8d343b82c88eb36a275",
+  "device": "cuda:0",
+  "expected_device_name": "NVIDIA GeForce RTX 5080",
+  "visible_cuda_device_count": 1,
+  "process_count": 1,
+  "numeric_precision": "float32",
+  "execution_mode": "deterministic",
+  "framework_settings": {"deterministic_algorithms": true, "cudnn_deterministic": true, "cudnn_benchmark": false, "allow_tf32": false},
+  "seed_set": [7, 42, 123],
+  "resource_budget": {"limits": [
+    {"field": "completed_epochs", "value": 400, "unit": "count", "enforcement": "hard"},
+    {"field": "completed_training_steps", "value": 1000000, "unit": "count", "enforcement": "hard"},
+    {"field": "wall_clock_duration_ms", "value": 259200000, "unit": "milliseconds", "enforcement": "hard"},
+    {"field": "peak_device_memory_bytes", "value": 16000000000, "unit": "bytes", "enforcement": "hard"},
+    {"field": "parameter_count", "value": 500000000, "unit": "count", "enforcement": "advisory"},
+    {"field": "input_volume_bytes", "value": 8000000000, "unit": "bytes", "enforcement": "advisory"}
+  ]},
+  "checkpoint_interval_epochs": 1,
+  "checkpoint_retention": {"preserve_selected": true, "preserve_last": true, "preserve_recovery_state": true},
+  "output_root": "runs_v2/strict",
+  "shared_artifact_root": "artifacts",
+  "read_only_roots": ["runs", "src"],
+  "recovery_state_names": ["model", "optimizer", "scheduler", "stage"],
+  "persist_frozen_identity_before_training": true,
+  "template_hash": "f334b0d54c40c51bc6c50d5f25b8ea7dbcde8e79a4c67699532489e21e15a003"
+}

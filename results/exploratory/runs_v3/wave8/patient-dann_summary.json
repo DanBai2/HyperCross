@@ -1,0 +1,52 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 120,
+  "tag": "patient-dann",
+  "reference": {
+    "ba": 0.8714,
+    "auroc": 0.8677
+  },
+  "candidates": {
+    "mlp-spec": {
+      "acc": 0.8472,
+      "ba": 0.8286,
+      "auroc": 0.8606,
+      "ece": 0.1267
+    },
+    "dann-spec-0.3": {
+      "acc": 0.8088,
+      "ba": 0.8094,
+      "auroc": 0.8935,
+      "ece": 0.1008
+    },
+    "dann-spec-1.0": {
+      "acc": 0.7868,
+      "ba": 0.7909,
+      "auroc": 0.8745,
+      "ece": 0.0805
+    },
+    "fusion-concat": {
+      "acc": 0.8159,
+      "ba": 0.8258,
+      "auroc": 0.9183,
+      "ece": 0.1688
+    },
+    "fusion-dann-spec-1.0": {
+      "acc": 0.7754,
+      "ba": 0.7785,
+      "auroc": 0.8675,
+      "ece": 0.1778
+    },
+    "fusion-dann-all-1.0": {
+      "acc": 0.5842,
+      "ba": 0.459,
+      "auroc": 0.4986,
+      "ece": 0.1324
+    }
+  }
+}

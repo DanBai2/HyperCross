@@ -1,0 +1,71 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 200,
+  "candidates": {
+    "clean": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6375,
+        "Gsw": -0.1191,
+        "PhiPS2": 0.4144
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6293,
+        "Gsw": -0.1389,
+        "PhiPS2": 0.4041
+      }
+    },
+    "dann0.3": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6442,
+        "Gsw": -0.02,
+        "PhiPS2": 0.4366
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6383,
+        "Gsw": -0.0215,
+        "PhiPS2": 0.4252
+      }
+    },
+    "dann1.0": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6057,
+        "Gsw": 0.0523,
+        "PhiPS2": 0.4308
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.5907,
+        "Gsw": 0.0308,
+        "PhiPS2": 0.4171
+      }
+    },
+    "ensemble": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6468,
+        "Gsw": -0.0051,
+        "PhiPS2": 0.4394
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6405,
+        "Gsw": -0.0189,
+        "PhiPS2": 0.433
+      }
+    },
+    "routed": {
+      "per_target_r2_mean": {
+        "GrainWeight": 0.6504,
+        "Gsw": 0.0523,
+        "PhiPS2": 0.4149
+      },
+      "per_target_r2_min": {
+        "GrainWeight": 0.6386,
+        "Gsw": 0.0308,
+        "PhiPS2": 0.4102
+      }
+    }
+  }
+}

@@ -1,0 +1,530 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 200,
+  "designs": [
+    "outer-lovo",
+    "inner-lovo",
+    "inner-stratified"
+  ],
+  "families": [
+    "ridge-spec",
+    "clean-mlp",
+    "dann1.0"
+  ],
+  "parts": 3,
+  "n_samples": 1590,
+  "tag": "instrument-proxy",
+  "evidence_grade": "exploratory",
+  "results": {
+    "outer-lovo": {
+      "ridge-spec": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.3439,
+          "Gsw": -0.1654,
+          "PhiPS2": 0.48
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.2385,
+          "Gsw": -0.2477,
+          "PhiPS2": 0.4598
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.2138,
+            "Gsw": -0.1935,
+            "PhiPS2": 0.3227
+          },
+          "Kvium": {
+            "GrainWeight": 0.3096,
+            "Gsw": 0.0953,
+            "PhiPS2": 0.4908
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.0093,
+            "Gsw": -0.2789,
+            "PhiPS2": 0.3937
+          },
+          "Sheriff": {
+            "GrainWeight": 0.4213,
+            "Gsw": -0.6135,
+            "PhiPS2": 0.6319
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.3439,
+            "Gsw": -0.1654,
+            "PhiPS2": 0.48
+          },
+          {
+            "GrainWeight": 0.3439,
+            "Gsw": -0.1654,
+            "PhiPS2": 0.48
+          },
+          {
+            "GrainWeight": 0.3439,
+            "Gsw": -0.1654,
+            "PhiPS2": 0.48
+          }
+        ]
+      },
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.6375,
+          "Gsw": -0.1191,
+          "PhiPS2": 0.4144
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.5787,
+          "Gsw": -0.2172,
+          "PhiPS2": 0.3944
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.6118,
+            "Gsw": 0.0521,
+            "PhiPS2": 0.2431
+          },
+          "Kvium": {
+            "GrainWeight": 0.4723,
+            "Gsw": 0.1122,
+            "PhiPS2": 0.456
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.6099,
+            "Gsw": -0.1568,
+            "PhiPS2": 0.3413
+          },
+          "Sheriff": {
+            "GrainWeight": 0.6209,
+            "Gsw": -0.8762,
+            "PhiPS2": 0.5371
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.6293,
+            "Gsw": -0.1061,
+            "PhiPS2": 0.4248
+          },
+          {
+            "GrainWeight": 0.6413,
+            "Gsw": -0.1124,
+            "PhiPS2": 0.4142
+          },
+          {
+            "GrainWeight": 0.6419,
+            "Gsw": -0.1389,
+            "PhiPS2": 0.4041
+          }
+        ]
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.6057,
+          "Gsw": 0.0523,
+          "PhiPS2": 0.4308
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.5512,
+          "Gsw": -0.0159,
+          "PhiPS2": 0.4145
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.693,
+            "Gsw": 0.1635,
+            "PhiPS2": 0.2154
+          },
+          "Kvium": {
+            "GrainWeight": 0.4265,
+            "Gsw": 0.0911,
+            "PhiPS2": 0.5603
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.49,
+            "Gsw": -0.0136,
+            "PhiPS2": 0.3635
+          },
+          "Sheriff": {
+            "GrainWeight": 0.5952,
+            "Gsw": -0.3046,
+            "PhiPS2": 0.5189
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.6007,
+            "Gsw": 0.0611,
+            "PhiPS2": 0.4415
+          },
+          {
+            "GrainWeight": 0.5907,
+            "Gsw": 0.0651,
+            "PhiPS2": 0.4171
+          },
+          {
+            "GrainWeight": 0.6258,
+            "Gsw": 0.0308,
+            "PhiPS2": 0.4339
+          }
+        ]
+      }
+    },
+    "inner-lovo": {
+      "ridge-spec": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.2596,
+          "Gsw": -0.2405,
+          "PhiPS2": 0.405
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.2346,
+          "Gsw": -0.2485,
+          "PhiPS2": 0.4021
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.3252,
+            "Gsw": -0.3579,
+            "PhiPS2": 0.4613
+          },
+          "Kvium": {
+            "GrainWeight": 0.2655,
+            "Gsw": -0.1961,
+            "PhiPS2": 0.4002
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.4157,
+            "Gsw": -0.1965,
+            "PhiPS2": 0.3848
+          },
+          "Sheriff": {
+            "GrainWeight": -0.0678,
+            "Gsw": -0.2434,
+            "PhiPS2": 0.362
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.2596,
+            "Gsw": -0.2405,
+            "PhiPS2": 0.405
+          },
+          {
+            "GrainWeight": 0.2596,
+            "Gsw": -0.2405,
+            "PhiPS2": 0.405
+          },
+          {
+            "GrainWeight": 0.2596,
+            "Gsw": -0.2405,
+            "PhiPS2": 0.405
+          }
+        ]
+      },
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5909,
+          "Gsw": -0.2195,
+          "PhiPS2": 0.3755
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.5827,
+          "Gsw": -0.2274,
+          "PhiPS2": 0.3729
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.5526,
+            "Gsw": -0.2425,
+            "PhiPS2": 0.408
+          },
+          "Kvium": {
+            "GrainWeight": 0.6125,
+            "Gsw": -0.3617,
+            "PhiPS2": 0.3847
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.6606,
+            "Gsw": -0.3376,
+            "PhiPS2": 0.3978
+          },
+          "Sheriff": {
+            "GrainWeight": 0.5051,
+            "Gsw": 0.0322,
+            "PhiPS2": 0.301
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5884,
+            "Gsw": -0.2178,
+            "PhiPS2": 0.3757
+          },
+          {
+            "GrainWeight": 0.593,
+            "Gsw": -0.2039,
+            "PhiPS2": 0.3768
+          },
+          {
+            "GrainWeight": 0.5914,
+            "Gsw": -0.2367,
+            "PhiPS2": 0.3739
+          }
+        ]
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5169,
+          "Gsw": -0.0181,
+          "PhiPS2": 0.3565
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.512,
+          "Gsw": -0.0254,
+          "PhiPS2": 0.3551
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.4024,
+            "Gsw": -0.128,
+            "PhiPS2": 0.3617
+          },
+          "Kvium": {
+            "GrainWeight": 0.5707,
+            "Gsw": -0.1166,
+            "PhiPS2": 0.3539
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.5753,
+            "Gsw": -0.0016,
+            "PhiPS2": 0.3819
+          },
+          "Sheriff": {
+            "GrainWeight": 0.4995,
+            "Gsw": 0.1445,
+            "PhiPS2": 0.3229
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5241,
+            "Gsw": -0.0103,
+            "PhiPS2": 0.3576
+          },
+          {
+            "GrainWeight": 0.5061,
+            "Gsw": -0.014,
+            "PhiPS2": 0.3567
+          },
+          {
+            "GrainWeight": 0.5205,
+            "Gsw": -0.0299,
+            "PhiPS2": 0.3553
+          }
+        ]
+      }
+    },
+    "inner-stratified": {
+      "ridge-spec": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.6614,
+          "Gsw": 0.2707,
+          "PhiPS2": 0.5972
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.6531,
+          "Gsw": 0.2665,
+          "PhiPS2": 0.5954
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.6546,
+            "Gsw": 0.2561,
+            "PhiPS2": 0.6348
+          },
+          "Kvium": {
+            "GrainWeight": 0.7112,
+            "Gsw": 0.2856,
+            "PhiPS2": 0.5877
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.6487,
+            "Gsw": 0.2864,
+            "PhiPS2": 0.6013
+          },
+          "Sheriff": {
+            "GrainWeight": 0.5977,
+            "Gsw": 0.2379,
+            "PhiPS2": 0.5578
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.6626,
+            "Gsw": 0.2719,
+            "PhiPS2": 0.5982
+          },
+          {
+            "GrainWeight": 0.6626,
+            "Gsw": 0.2719,
+            "PhiPS2": 0.5982
+          },
+          {
+            "GrainWeight": 0.6589,
+            "Gsw": 0.2682,
+            "PhiPS2": 0.5952
+          }
+        ]
+      },
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.776,
+          "Gsw": 0.2732,
+          "PhiPS2": 0.5924
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.7696,
+          "Gsw": 0.2693,
+          "PhiPS2": 0.5898
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.7696,
+            "Gsw": 0.2766,
+            "PhiPS2": 0.6483
+          },
+          "Kvium": {
+            "GrainWeight": 0.8378,
+            "Gsw": 0.3,
+            "PhiPS2": 0.5905
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.7476,
+            "Gsw": 0.2459,
+            "PhiPS2": 0.5665
+          },
+          "Sheriff": {
+            "GrainWeight": 0.7235,
+            "Gsw": 0.2547,
+            "PhiPS2": 0.5541
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.7766,
+            "Gsw": 0.2744,
+            "PhiPS2": 0.5929
+          },
+          {
+            "GrainWeight": 0.7754,
+            "Gsw": 0.271,
+            "PhiPS2": 0.5928
+          },
+          {
+            "GrainWeight": 0.7761,
+            "Gsw": 0.2743,
+            "PhiPS2": 0.5915
+          }
+        ]
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.6739,
+          "Gsw": 0.2164,
+          "PhiPS2": 0.5185
+        },
+        "per_outer_mean_r2_mean_over_seeds": {
+          "GrainWeight": 0.6674,
+          "Gsw": 0.2118,
+          "PhiPS2": 0.5161
+        },
+        "per_outer_seed_mean": {
+          "Heerup": {
+            "GrainWeight": 0.6399,
+            "Gsw": 0.1933,
+            "PhiPS2": 0.567
+          },
+          "Kvium": {
+            "GrainWeight": 0.7483,
+            "Gsw": 0.2391,
+            "PhiPS2": 0.5111
+          },
+          "Rembrandt": {
+            "GrainWeight": 0.6343,
+            "Gsw": 0.2021,
+            "PhiPS2": 0.5093
+          },
+          "Sheriff": {
+            "GrainWeight": 0.6472,
+            "Gsw": 0.2128,
+            "PhiPS2": 0.4771
+          }
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.6675,
+            "Gsw": 0.2214,
+            "PhiPS2": 0.5124
+          },
+          {
+            "GrainWeight": 0.6803,
+            "Gsw": 0.2155,
+            "PhiPS2": 0.5262
+          },
+          {
+            "GrainWeight": 0.6739,
+            "Gsw": 0.2123,
+            "PhiPS2": 0.5169
+          }
+        ]
+      }
+    }
+  },
+  "gsw_pooled_table": {
+    "outer-lovo": {
+      "ridge-spec": -0.1654,
+      "clean-mlp": -0.1191,
+      "dann1.0": 0.0523
+    },
+    "inner-lovo": {
+      "ridge-spec": -0.2405,
+      "clean-mlp": -0.2195,
+      "dann1.0": -0.0181
+    },
+    "inner-stratified": {
+      "ridge-spec": 0.2707,
+      "clean-mlp": 0.2732,
+      "dann1.0": 0.2164
+    }
+  },
+  "deltas": {
+    "outer-lovo": {
+      "dann1.0_minus_clean-mlp": {
+        "GrainWeight": -0.0318,
+        "Gsw": 0.1714,
+        "PhiPS2": 0.0164
+      }
+    },
+    "inner-lovo": {
+      "dann1.0_minus_clean-mlp": {
+        "GrainWeight": -0.074,
+        "Gsw": 0.2014,
+        "PhiPS2": -0.019
+      }
+    },
+    "inner-stratified": {
+      "dann1.0_minus_clean-mlp": {
+        "GrainWeight": -0.1021,
+        "Gsw": -0.0568,
+        "PhiPS2": -0.0739
+      }
+    }
+  }
+}

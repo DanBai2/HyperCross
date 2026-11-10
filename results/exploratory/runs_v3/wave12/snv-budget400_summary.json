@@ -1,0 +1,122 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 400,
+  "variants": [
+    "snv"
+  ],
+  "n_samples": 1590,
+  "tag": "snv-budget400",
+  "evidence_grade": "exploratory",
+  "outer_metrics": {
+    "snv": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.6415,
+        "Gsw": 0.0958,
+        "PhiPS2": 0.4759
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0007,
+        "Gsw": 0.0016,
+        "PhiPS2": 0.0005
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.642,
+          "Gsw": 0.0969,
+          "PhiPS2": 0.4764
+        },
+        {
+          "GrainWeight": 0.6406,
+          "Gsw": 0.097,
+          "PhiPS2": 0.4761
+        },
+        {
+          "GrainWeight": 0.642,
+          "Gsw": 0.0936,
+          "PhiPS2": 0.4752
+        }
+      ]
+    }
+  },
+  "inner_score": {
+    "GrainWeight": {
+      "snv": {
+        "Heerup": 0.6399,
+        "Kvium": 0.6475,
+        "Rembrandt": 0.6148,
+        "Sheriff": 0.5445
+      }
+    },
+    "Gsw": {
+      "snv": {
+        "Heerup": 0.0399,
+        "Kvium": 0.0542,
+        "Rembrandt": 0.0748,
+        "Sheriff": 0.1235
+      }
+    },
+    "PhiPS2": {
+      "snv": {
+        "Heerup": 0.5298,
+        "Kvium": 0.3929,
+        "Rembrandt": 0.447,
+        "Sheriff": 0.4304
+      }
+    }
+  },
+  "selected_route": {
+    "GrainWeight": {
+      "Heerup": "snv",
+      "Kvium": "snv",
+      "Rembrandt": "snv",
+      "Sheriff": "snv"
+    },
+    "Gsw": {
+      "Heerup": "snv",
+      "Kvium": "snv",
+      "Rembrandt": "snv",
+      "Sheriff": "snv"
+    },
+    "PhiPS2": {
+      "Heerup": "snv",
+      "Kvium": "snv",
+      "Rembrandt": "snv",
+      "Sheriff": "snv"
+    }
+  },
+  "routed_policy": {
+    "pooled_r2_mean_over_seeds": {
+      "GrainWeight": 0.6415,
+      "Gsw": 0.0958,
+      "PhiPS2": 0.4759
+    },
+    "per_seed_pooled": [
+      {
+        "GrainWeight": 0.642,
+        "Gsw": 0.0969,
+        "PhiPS2": 0.4764
+      },
+      {
+        "GrainWeight": 0.6406,
+        "Gsw": 0.097,
+        "PhiPS2": 0.4761
+      },
+      {
+        "GrainWeight": 0.642,
+        "Gsw": 0.0936,
+        "PhiPS2": 0.4752
+      }
+    ]
+  },
+  "best_single_variant_for_gsw": "snv",
+  "outer_metric_oracle_reference_only": {
+    "GrainWeight": 0.6415,
+    "Gsw": 0.0958,
+    "PhiPS2": 0.4759
+  }
+}

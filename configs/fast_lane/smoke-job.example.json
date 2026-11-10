@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "stage": "smoke",
+  "job_name": "hyperleaf-smoke-seed-42",
+  "dataset_key": "hyperleaf2024",
+  "dataset_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "protocol_key": "leaf.smoke.train-only.v1",
+  "protocol_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "model_key": "hyperleaf.route-a.smoke.v1",
+  "fold_id": "train-only-smoke",
+  "seed": 42,
+  "input_volume_bytes": 1,
+  "selection_metric_direction": "maximize",
+  "parameters": {
+    "batch_size": 2,
+    "dataset_split": "train-only",
+    "max_samples": 8,
+    "official_test_labels_allowed": false,
+    "representation_key": "hyperleaf.rgb-spectrum.smoke.v1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/danfenghong/IEEE_TGRS_SpectralFormer",
+  "commit": "fd08eb5edc9565f86b925a6b9abf8ebb63a5f065",
+  "sha256": "2AAAAD822CF1B7F281C317CD34A7EEE51F2328AB201A7846432B2096A7716221",
+  "modifications": "added local einops compatibility shim only; upstream vit_pytorch.py unchanged",
+  "downloaded_utc": "2026-10-06T13:16:55.7999381Z"
+}

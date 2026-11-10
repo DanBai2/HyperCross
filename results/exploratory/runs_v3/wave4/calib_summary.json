@@ -1,0 +1,72 @@
+{
+  "reference_ba": 0.8714,
+  "n_rois": 469,
+  "candidates": {
+    "mlp-spec": {
+      "auroc": 0.8605,
+      "acc_raw50": 0.8472,
+      "ba_raw50": 0.8286,
+      "acc_tmp50": 0.8472,
+      "ba_tmp50": 0.8286,
+      "ba_rawTau": 0.8405,
+      "ba_tmpTau": 0.8433,
+      "ece_raw": 0.1268,
+      "ece_tmp": 0.0568
+    },
+    "dann-spec": {
+      "auroc": 0.8935,
+      "acc_raw50": 0.8088,
+      "ba_raw50": 0.8094,
+      "acc_tmp50": 0.8088,
+      "ba_tmp50": 0.8094,
+      "ba_rawTau": 0.8188,
+      "ba_tmpTau": 0.8178,
+      "ece_raw": 0.1008,
+      "ece_tmp": 0.0692
+    },
+    "cnn-rgb": {
+      "auroc": 0.915,
+      "acc_raw50": 0.7989,
+      "ba_raw50": 0.8071,
+      "acc_tmp50": 0.7989,
+      "ba_tmp50": 0.8071,
+      "ba_rawTau": 0.8082,
+      "ba_tmpTau": 0.808,
+      "ece_raw": 0.1805,
+      "ece_tmp": 0.0552
+    },
+    "fusion-concat": {
+      "auroc": 0.9198,
+      "acc_raw50": 0.8152,
+      "ba_raw50": 0.8229,
+      "acc_tmp50": 0.8152,
+      "ba_tmp50": 0.8229,
+      "ba_rawTau": 0.8125,
+      "ba_tmpTau": 0.825,
+      "ece_raw": 0.1658,
+      "ece_tmp": 0.0354
+    },
+    "fusion-valueonly": {
+      "auroc": 0.9125,
+      "acc_raw50": 0.8174,
+      "ba_raw50": 0.82,
+      "acc_tmp50": 0.8174,
+      "ba_tmp50": 0.82,
+      "ba_rawTau": 0.8079,
+      "ba_tmpTau": 0.8023,
+      "ece_raw": 0.1557,
+      "ece_tmp": 0.0548
+    },
+    "fusion-crossattn": {
+      "auroc": 0.9053,
+      "acc_raw50": 0.7918,
+      "ba_raw50": 0.7993,
+      "acc_tmp50": 0.7918,
+      "ba_tmp50": 0.7993,
+      "ba_rawTau": 0.7971,
+      "ba_tmpTau": 0.7679,
+      "ece_raw": 0.1951,
+      "ece_tmp": 0.0731
+    }
+  }
+}

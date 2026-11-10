@@ -1,0 +1,51 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 120,
+  "tag": "lopo-3seed",
+  "n_rois": 469,
+  "n_patients": 13,
+  "pos": 166,
+  "candidates": {
+    "mlp-spec": {
+      "acc": 0.8472,
+      "ba": 0.8286,
+      "auroc": 0.8606,
+      "ece": 0.1267
+    },
+    "dann-spec": {
+      "acc": 0.8088,
+      "ba": 0.8094,
+      "auroc": 0.8935,
+      "ece": 0.1008
+    },
+    "cnn-rgb": {
+      "acc": 0.7989,
+      "ba": 0.8071,
+      "auroc": 0.9155,
+      "ece": 0.1805
+    },
+    "fusion-concat": {
+      "acc": 0.8152,
+      "ba": 0.8229,
+      "auroc": 0.919,
+      "ece": 0.1658
+    },
+    "fusion-valueonly": {
+      "acc": 0.8173,
+      "ba": 0.82,
+      "auroc": 0.9125,
+      "ece": 0.1557
+    },
+    "fusion-crossattn": {
+      "acc": 0.7918,
+      "ba": 0.7993,
+      "auroc": 0.9053,
+      "ece": 0.1951
+    }
+  }
+}

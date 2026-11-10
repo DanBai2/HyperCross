@@ -1,0 +1,83 @@
+"""Stable model registry and controlled checkpoint interfaces."""
+
+from benchmark.models.checkpoint import (
+    ExternalCheckpointLoader,
+    ExternalCheckpointLoadError,
+)
+from benchmark.models.hyperleaf_candidates import (
+    AVERAGE_BRANCH,
+    INDEPENDENT_TARGET_MODEL_KEY,
+    PCA_BRANCH,
+    PCA_INDEPENDENT_TARGET_MODEL_KEY,
+    RGB_BRANCH,
+    RGB_PCA_CONSISTENCY_MODEL_KEY,
+    TARGET_ROUTED_BRANCH,
+    HyperLeafIndependentTargets,
+    HyperLeafPcaIndependentTargets,
+    HyperLeafRgbPcaConsistency,
+    create_hyperleaf_candidate_registry,
+    hyperleaf_candidate_registrations,
+    rgb_pca_consistency_loss,
+)
+from benchmark.models.hyperleaf_route_a import (
+    GLOBAL_FUSION_MODEL_KEY,
+    LOCAL_MIL_MODEL_KEY,
+    SHARED_HEADS_MODEL_KEY,
+    TARGET_EXPERTS_MODEL_KEY,
+    TOKEN_MODEL_KEY,
+    HyperLeafGlobalFusionAdapter,
+    HyperLeafLocalMILRouteAAdapter,
+    HyperLeafSharedHeadsAdapter,
+    HyperLeafTargetExpertsAdapter,
+    HyperLeafTokenRouteAAdapter,
+    create_hyperleaf_route_a_registry,
+    hyperleaf_route_a_registrations,
+)
+from benchmark.models.registry import (
+    ModelBuilder,
+    ModelRegistration,
+    ModelRegistry,
+    ModelRegistryError,
+)
+from benchmark.models.reproduction import (
+    ReproductionGate,
+    ReproductionGateDecision,
+    ReproductionGateError,
+)
+
+__all__ = [
+    "AVERAGE_BRANCH",
+    "INDEPENDENT_TARGET_MODEL_KEY",
+    "PCA_BRANCH",
+    "PCA_INDEPENDENT_TARGET_MODEL_KEY",
+    "RGB_BRANCH",
+    "RGB_PCA_CONSISTENCY_MODEL_KEY",
+    "TARGET_ROUTED_BRANCH",
+    "HyperLeafIndependentTargets",
+    "HyperLeafPcaIndependentTargets",
+    "HyperLeafRgbPcaConsistency",
+    "create_hyperleaf_candidate_registry",
+    "hyperleaf_candidate_registrations",
+    "rgb_pca_consistency_loss",
+    "GLOBAL_FUSION_MODEL_KEY",
+    "LOCAL_MIL_MODEL_KEY",
+    "SHARED_HEADS_MODEL_KEY",
+    "TARGET_EXPERTS_MODEL_KEY",
+    "TOKEN_MODEL_KEY",
+    "HyperLeafGlobalFusionAdapter",
+    "HyperLeafLocalMILRouteAAdapter",
+    "HyperLeafSharedHeadsAdapter",
+    "HyperLeafTargetExpertsAdapter",
+    "HyperLeafTokenRouteAAdapter",
+    "create_hyperleaf_route_a_registry",
+    "hyperleaf_route_a_registrations",
+    "ExternalCheckpointLoader",
+    "ExternalCheckpointLoadError",
+    "ModelBuilder",
+    "ModelRegistration",
+    "ModelRegistry",
+    "ModelRegistryError",
+    "ReproductionGate",
+    "ReproductionGateDecision",
+    "ReproductionGateError",
+]

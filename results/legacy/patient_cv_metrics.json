@@ -1,0 +1,959 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "val_patients": [
+        "P1",
+        "P2",
+        "P7"
+      ],
+      "n_val": 130,
+      "routeA": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "auroc": 1.0,
+        "ece_10bin": 0.17050823752696698,
+        "confusion_matrix": [
+          [
+            94,
+            0
+          ],
+          [
+            0,
+            36
+          ]
+        ],
+        "n": 130
+      },
+      "mil_concat": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "auroc": 1.0,
+        "ece_10bin": 0.1601685432287363,
+        "confusion_matrix": [
+          [
+            94,
+            0
+          ],
+          [
+            0,
+            36
+          ]
+        ],
+        "n": 130
+      }
+    },
+    {
+      "fold": 1,
+      "val_patients": [
+        "P10",
+        "P3",
+        "P8"
+      ],
+      "n_val": 101,
+      "routeA": {
+        "accuracy": 0.9603960396039604,
+        "balanced_accuracy": 0.9568376068376068,
+        "sensitivity": 0.9444444444444444,
+        "specificity": 0.9692307692307692,
+        "auroc": 0.9696581196581197,
+        "ece_10bin": 0.11751430990672346,
+        "confusion_matrix": [
+          [
+            63,
+            2
+          ],
+          [
+            2,
+            34
+          ]
+        ],
+        "n": 101
+      },
+      "mil_concat": {
+        "accuracy": 0.8613861386138614,
+        "balanced_accuracy": 0.8179487179487179,
+        "sensitivity": 0.6666666666666666,
+        "specificity": 0.9692307692307692,
+        "auroc": 0.9743589743589743,
+        "ece_10bin": 0.10014425704974936,
+        "confusion_matrix": [
+          [
+            63,
+            2
+          ],
+          [
+            12,
+            24
+          ]
+        ],
+        "n": 101
+      }
+    },
+    {
+      "fold": 2,
+      "val_patients": [
+        "P11",
+        "P4",
+        "P9"
+      ],
+      "n_val": 86,
+      "routeA": {
+        "accuracy": 0.8604651162790697,
+        "balanced_accuracy": 0.8695652173913043,
+        "sensitivity": 0.7391304347826086,
+        "specificity": 1.0,
+        "auroc": 0.7554347826086957,
+        "ece_10bin": 0.06587125118388686,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            12,
+            34
+          ]
+        ],
+        "n": 86
+      },
+      "mil_concat": {
+        "accuracy": 0.8604651162790697,
+        "balanced_accuracy": 0.8695652173913043,
+        "sensitivity": 0.7391304347826086,
+        "specificity": 1.0,
+        "auroc": 0.7635869565217391,
+        "ece_10bin": 0.15336899909862256,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            12,
+            34
+          ]
+        ],
+        "n": 86
+      }
+    },
+    {
+      "fold": 3,
+      "val_patients": [
+        "P12",
+        "P5"
+      ],
+      "n_val": 88,
+      "routeA": {
+        "accuracy": 0.9431818181818182,
+        "balanced_accuracy": 0.9479166666666667,
+        "sensitivity": 0.9583333333333334,
+        "specificity": 0.9375,
+        "auroc": 0.9921875,
+        "ece_10bin": 0.3168284398588267,
+        "confusion_matrix": [
+          [
+            60,
+            4
+          ],
+          [
+            1,
+            23
+          ]
+        ],
+        "n": 88
+      },
+      "mil_concat": {
+        "accuracy": 0.8977272727272727,
+        "balanced_accuracy": 0.8385416666666667,
+        "sensitivity": 0.7083333333333334,
+        "specificity": 0.96875,
+        "auroc": 0.8977864583333334,
+        "ece_10bin": 0.18658854541453448,
+        "confusion_matrix": [
+          [
+            62,
+            2
+          ],
+          [
+            7,
+            17
+          ]
+        ],
+        "n": 88
+      }
+    },
+    {
+      "fold": 4,
+      "val_patients": [
+        "P13",
+        "P6"
+      ],
+      "n_val": 64,
+      "routeA": {
+        "accuracy": 0.8125,
+        "balanced_accuracy": 0.7583333333333333,
+        "sensitivity": 0.5416666666666666,
+        "specificity": 0.975,
+        "auroc": 0.7572916666666667,
+        "ece_10bin": 0.1813262552022934,
+        "confusion_matrix": [
+          [
+            39,
+            1
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "n": 64
+      },
+      "mil_concat": {
+        "accuracy": 0.828125,
+        "balanced_accuracy": 0.7708333333333333,
+        "sensitivity": 0.5416666666666666,
+        "specificity": 1.0,
+        "auroc": 0.7,
+        "ece_10bin": 0.2079479619860649,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            11,
+            13
+          ]
+        ],
+        "n": 64
+      }
+    }
+  ],
+  "routeA_aggregate": {
+    "accuracy": 0.929637526652452,
+    "balanced_accuracy": 0.9101355918724403,
+    "sensitivity": 0.8433734939759037,
+    "specificity": 0.976897689768977,
+    "auroc": 0.9026999085450714,
+    "ece_10bin": 0.12799826372406883,
+    "confusion_matrix": [
+      [
+        296,
+        7
+      ],
+      [
+        26,
+        140
+      ]
+    ],
+    "n": 469
+  },
+  "routeA_threshold_sweep": [
+    {
+      "threshold": 0.1,
+      "accuracy": 0.5309168443496801,
+      "balanced_accuracy": 0.6301542804882898,
+      "sensitivity": 0.9698795180722891,
+      "specificity": 0.29042904290429045,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.27444516049265094,
+      "confusion_matrix": [
+        [
+          88,
+          215
+        ],
+        [
+          5,
+          161
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.15000000000000002,
+      "accuracy": 0.5735607675906184,
+      "balanced_accuracy": 0.6440912163505508,
+      "sensitivity": 0.8855421686746988,
+      "specificity": 0.40264026402640263,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.2318012372517128,
+      "confusion_matrix": [
+        [
+          122,
+          181
+        ],
+        [
+          19,
+          147
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.2,
+      "accuracy": 0.6567164179104478,
+      "balanced_accuracy": 0.7030001192890374,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.5445544554455446,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.1532146344815236,
+      "confusion_matrix": [
+        [
+          165,
+          138
+        ],
+        [
+          23,
+          143
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.25,
+      "accuracy": 0.6865671641791045,
+      "balanced_accuracy": 0.7261024295200604,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.5907590759075908,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.12336388821286687,
+      "confusion_matrix": [
+        [
+          179,
+          124
+        ],
+        [
+          23,
+          143
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.30000000000000004,
+      "accuracy": 0.7164179104477612,
+      "balanced_accuracy": 0.7492047397510836,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.636963696369637,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.1326469247783425,
+      "confusion_matrix": [
+        [
+          193,
+          110
+        ],
+        [
+          23,
+          143
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.35,
+      "accuracy": 0.7654584221748401,
+      "balanced_accuracy": 0.7871585351306215,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.7128712871287128,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.08360641305126361,
+      "confusion_matrix": [
+        [
+          216,
+          87
+        ],
+        [
+          23,
+          143
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.8827292110874201,
+      "balanced_accuracy": 0.8779176110382123,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.8943894389438944,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.10630536270039931,
+      "confusion_matrix": [
+        [
+          271,
+          32
+        ],
+        [
+          23,
+          143
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.45000000000000007,
+      "accuracy": 0.9189765458422174,
+      "balanced_accuracy": 0.9046085331424709,
+      "sensitivity": 0.8554216867469879,
+      "specificity": 0.9537953795379538,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.11733728291383431,
+      "confusion_matrix": [
+        [
+          289,
+          14
+        ],
+        [
+          24,
+          142
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.929637526652452,
+      "balanced_accuracy": 0.9101355918724403,
+      "sensitivity": 0.8433734939759037,
+      "specificity": 0.976897689768977,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.12799826372406883,
+      "confusion_matrix": [
+        [
+          296,
+          7
+        ],
+        [
+          26,
+          140
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.55,
+      "accuracy": 0.9232409381663113,
+      "balanced_accuracy": 0.8956519145890492,
+      "sensitivity": 0.8012048192771084,
+      "specificity": 0.9900990099009901,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.12160167523792813,
+      "confusion_matrix": [
+        [
+          300,
+          3
+        ],
+        [
+          33,
+          133
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.8933901918976546,
+      "balanced_accuracy": 0.8521213567139847,
+      "sensitivity": 0.7108433734939759,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.09564438189016478,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          48,
+          118
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.65,
+      "accuracy": 0.8742004264392325,
+      "balanced_accuracy": 0.8250129229790448,
+      "sensitivity": 0.6566265060240963,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.07645461643174259,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          57,
+          109
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.7000000000000001,
+      "accuracy": 0.8656716417910447,
+      "balanced_accuracy": 0.8129647302079606,
+      "sensitivity": 0.6325301204819277,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.06792583178355495,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          61,
+          105
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.8592750533049041,
+      "balanced_accuracy": 0.8039285856296473,
+      "sensitivity": 0.6144578313253012,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.06152924329741422,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          64,
+          102
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.8464818763326226,
+      "balanced_accuracy": 0.7858562964730208,
+      "sensitivity": 0.5783132530120482,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.048736066325132776,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          70,
+          96
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.85,
+      "accuracy": 0.8081023454157783,
+      "balanced_accuracy": 0.7316394290031413,
+      "sensitivity": 0.46987951807228917,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.08254654969233693,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          88,
+          78
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.7761194029850746,
+      "balanced_accuracy": 0.686458706111575,
+      "sensitivity": 0.3795180722891566,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.9026999085450714,
+      "ece_10bin": 0.11452949212304056,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          103,
+          63
+        ]
+      ],
+      "n": 469
+    }
+  ],
+  "mil_concat_aggregate": {
+    "accuracy": 0.9019189765458422,
+    "balanced_accuracy": 0.8668933158376078,
+    "sensitivity": 0.7469879518072289,
+    "specificity": 0.9867986798679867,
+    "auroc": 0.8823810091852559,
+    "ece_10bin": 0.08575267120719207,
+    "confusion_matrix": [
+      [
+        299,
+        4
+      ],
+      [
+        42,
+        124
+      ]
+    ],
+    "n": 469
+  },
+  "mil_concat_threshold_sweep": [
+    {
+      "threshold": 0.1,
+      "accuracy": 0.5735607675906184,
+      "balanced_accuracy": 0.6549862817607062,
+      "sensitivity": 0.9337349397590361,
+      "specificity": 0.37623762376237624,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.2603059079347135,
+      "confusion_matrix": [
+        [
+          114,
+          189
+        ],
+        [
+          11,
+          155
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.15000000000000002,
+      "accuracy": 0.6076759061833689,
+      "balanced_accuracy": 0.6745795061433855,
+      "sensitivity": 0.9036144578313253,
+      "specificity": 0.44554455445544555,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.2261907693419629,
+      "confusion_matrix": [
+        [
+          135,
+          168
+        ],
+        [
+          16,
+          150
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.2,
+      "accuracy": 0.6780383795309168,
+      "balanced_accuracy": 0.7208636526303233,
+      "sensitivity": 0.8674698795180723,
+      "specificity": 0.5742574257425742,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.16902523279698414,
+      "confusion_matrix": [
+        [
+          174,
+          129
+        ],
+        [
+          22,
+          144
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.25,
+      "accuracy": 0.7654584221748401,
+      "balanced_accuracy": 0.785796651954352,
+      "sensitivity": 0.8554216867469879,
+      "specificity": 0.7161716171617162,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.0816051901530609,
+      "confusion_matrix": [
+        [
+          217,
+          86
+        ],
+        [
+          24,
+          142
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.30000000000000004,
+      "accuracy": 0.814498933901919,
+      "balanced_accuracy": 0.8169410314525429,
+      "sensitivity": 0.8253012048192772,
+      "specificity": 0.8085808580858086,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.09052479012942768,
+      "confusion_matrix": [
+        [
+          245,
+          58
+        ],
+        [
+          29,
+          137
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.35,
+      "accuracy": 0.837953091684435,
+      "balanced_accuracy": 0.8228358980476361,
+      "sensitivity": 0.7710843373493976,
+      "specificity": 0.8745874587458746,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.06707063234691168,
+      "confusion_matrix": [
+        [
+          265,
+          38
+        ],
+        [
+          38,
+          128
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.4,
+      "accuracy": 0.8891257995735607,
+      "balanced_accuracy": 0.8610779752674063,
+      "sensitivity": 0.7650602409638554,
+      "specificity": 0.9570957095709571,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.07580750151229562,
+      "confusion_matrix": [
+        [
+          290,
+          13
+        ],
+        [
+          39,
+          127
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.45000000000000007,
+      "accuracy": 0.8997867803837953,
+      "balanced_accuracy": 0.8693288003499144,
+      "sensitivity": 0.7650602409638554,
+      "specificity": 0.9735973597359736,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.08362047504514517,
+      "confusion_matrix": [
+        [
+          295,
+          8
+        ],
+        [
+          39,
+          127
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 0.9019189765458422,
+      "balanced_accuracy": 0.8668933158376078,
+      "sensitivity": 0.7469879518072289,
+      "specificity": 0.9867986798679867,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.08575267120719207,
+      "confusion_matrix": [
+        [
+          299,
+          4
+        ],
+        [
+          42,
+          124
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.55,
+      "accuracy": 0.8997867803837953,
+      "balanced_accuracy": 0.8611575012922978,
+      "sensitivity": 0.7289156626506024,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.08362047504514517,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          45,
+          121
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 0.8869936034115139,
+      "balanced_accuracy": 0.8430852121356713,
+      "sensitivity": 0.6927710843373494,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.07793969767434253,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          51,
+          115
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.65,
+      "accuracy": 0.8678038379530917,
+      "balanced_accuracy": 0.8159767784007317,
+      "sensitivity": 0.6385542168674698,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.058749932215920356,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          60,
+          106
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.7000000000000001,
+      "accuracy": 0.8571428571428571,
+      "balanced_accuracy": 0.8009165374368763,
+      "sensitivity": 0.608433734939759,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.04808895140568581,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          65,
+          101
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.8486140724946695,
+      "balanced_accuracy": 0.7888683446657919,
+      "sensitivity": 0.5843373493975904,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.03956016675749819,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          69,
+          97
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 0.8443496801705757,
+      "balanced_accuracy": 0.7828442482802498,
+      "sensitivity": 0.572289156626506,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.03529577443340437,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          71,
+          95
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.85,
+      "accuracy": 0.8294243070362474,
+      "balanced_accuracy": 0.7617599109308522,
+      "sensitivity": 0.5301204819277109,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.03702421076516351,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          78,
+          88
+        ]
+      ],
+      "n": 469
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.7974413646055437,
+      "balanced_accuracy": 0.7165791880392859,
+      "sensitivity": 0.4397590361445783,
+      "specificity": 0.9933993399339934,
+      "auroc": 0.8823810091852559,
+      "ece_10bin": 0.06900715319586713,
+      "confusion_matrix": [
+        [
+          301,
+          2
+        ],
+        [
+          93,
+          73
+        ]
+      ],
+      "n": 469
+    }
+  ]
+}

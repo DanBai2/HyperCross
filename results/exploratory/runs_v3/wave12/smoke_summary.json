@@ -1,0 +1,82 @@
+{
+  "device": "cuda",
+  "seeds": [
+    42
+  ],
+  "epochs": 5,
+  "variants": [
+    "msc"
+  ],
+  "n_samples": 1590,
+  "tag": "smoke",
+  "evidence_grade": "exploratory",
+  "outer_metrics": {
+    "msc": {
+      "pooled_r2_mean_over_seeds": {
+        "GrainWeight": 0.5096,
+        "Gsw": 0.1507,
+        "PhiPS2": 0.2046
+      },
+      "pooled_r2_std_over_seeds": {
+        "GrainWeight": 0.0,
+        "Gsw": 0.0,
+        "PhiPS2": 0.0
+      },
+      "per_seed_pooled": [
+        {
+          "GrainWeight": 0.5096,
+          "Gsw": 0.1507,
+          "PhiPS2": 0.2046
+        }
+      ]
+    }
+  },
+  "inner_score": {
+    "GrainWeight": {
+      "msc": {
+        "Heerup": 0.5348
+      }
+    },
+    "Gsw": {
+      "msc": {
+        "Heerup": 0.0147
+      }
+    },
+    "PhiPS2": {
+      "msc": {
+        "Heerup": 0.4162
+      }
+    }
+  },
+  "selected_route": {
+    "GrainWeight": {
+      "Heerup": "msc"
+    },
+    "Gsw": {
+      "Heerup": "msc"
+    },
+    "PhiPS2": {
+      "Heerup": "msc"
+    }
+  },
+  "routed_policy": {
+    "pooled_r2_mean_over_seeds": {
+      "GrainWeight": 0.5096,
+      "Gsw": 0.1507,
+      "PhiPS2": 0.2046
+    },
+    "per_seed_pooled": [
+      {
+        "GrainWeight": 0.5096,
+        "Gsw": 0.1507,
+        "PhiPS2": 0.2046
+      }
+    ]
+  },
+  "best_single_variant_for_gsw": "msc",
+  "outer_metric_oracle_reference_only": {
+    "GrainWeight": 0.5096,
+    "Gsw": 0.1507,
+    "PhiPS2": 0.2046
+  }
+}

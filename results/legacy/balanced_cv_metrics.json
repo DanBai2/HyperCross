@@ -1,0 +1,156 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "val_patients": [
+        "P1",
+        "P2",
+        "P7"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "auroc": 1.0,
+        "ece_10bin": 0.2045409101706285,
+        "confusion_matrix": [
+          [
+            94,
+            0
+          ],
+          [
+            0,
+            36
+          ]
+        ],
+        "n": 130
+      }
+    },
+    {
+      "fold": 1,
+      "val_patients": [
+        "P10",
+        "P3",
+        "P8"
+      ],
+      "metrics": {
+        "accuracy": 0.9801980198019802,
+        "balanced_accuracy": 0.9846153846153847,
+        "sensitivity": 1.0,
+        "specificity": 0.9692307692307692,
+        "auroc": 0.9705128205128205,
+        "ece_10bin": 0.16635461254875256,
+        "confusion_matrix": [
+          [
+            63,
+            2
+          ],
+          [
+            0,
+            36
+          ]
+        ],
+        "n": 101
+      }
+    },
+    {
+      "fold": 2,
+      "val_patients": [
+        "P11",
+        "P4",
+        "P9"
+      ],
+      "metrics": {
+        "accuracy": 0.8604651162790697,
+        "balanced_accuracy": 0.8695652173913043,
+        "sensitivity": 0.7391304347826086,
+        "specificity": 1.0,
+        "auroc": 0.7407608695652174,
+        "ece_10bin": 0.17773744186689688,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            12,
+            34
+          ]
+        ],
+        "n": 86
+      }
+    },
+    {
+      "fold": 3,
+      "val_patients": [
+        "P12",
+        "P5"
+      ],
+      "metrics": {
+        "accuracy": 0.9204545454545454,
+        "balanced_accuracy": 0.8671875,
+        "sensitivity": 0.75,
+        "specificity": 0.984375,
+        "auroc": 0.9713541666666666,
+        "ece_10bin": 0.41086320443586866,
+        "confusion_matrix": [
+          [
+            63,
+            1
+          ],
+          [
+            6,
+            18
+          ]
+        ],
+        "n": 88
+      }
+    },
+    {
+      "fold": 4,
+      "val_patients": [
+        "P13",
+        "P6"
+      ],
+      "metrics": {
+        "accuracy": 0.8125,
+        "balanced_accuracy": 0.75,
+        "sensitivity": 0.5,
+        "specificity": 1.0,
+        "auroc": 0.7635416666666667,
+        "ece_10bin": 0.1574831539765,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "n": 64
+      }
+    }
+  ],
+  "aggregate": {
+    "accuracy": 0.929637526652452,
+    "balanced_accuracy": 0.9046880591673625,
+    "sensitivity": 0.8192771084337349,
+    "specificity": 0.9900990099009901,
+    "auroc": 0.8956618553421607,
+    "ece_10bin": 0.18656791514679313,
+    "confusion_matrix": [
+      [
+        300,
+        3
+      ],
+      [
+        30,
+        136
+      ]
+    ],
+    "n": 469
+  }
+}

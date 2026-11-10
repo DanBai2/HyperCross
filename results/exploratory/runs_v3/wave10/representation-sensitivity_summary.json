@@ -1,0 +1,337 @@
+{
+  "device": "cuda",
+  "seeds": [
+    7,
+    42,
+    123
+  ],
+  "epochs": 60,
+  "families": [
+    "clean-mlp",
+    "dann1.0"
+  ],
+  "variants": [
+    "fold-z-204",
+    "sample-snv-204",
+    "fold-z-128",
+    "sample-snv-128"
+  ],
+  "n_samples": 1590,
+  "tag": "representation-sensitivity",
+  "evidence_grade": "exploratory",
+  "results": {
+    "fold-z-204": {
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.6148,
+          "Gsw": -0.0476,
+          "PhiPS2": 0.4051
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.6125,
+            "Gsw": -0.0478,
+            "PhiPS2": 0.4113
+          },
+          {
+            "GrainWeight": 0.6067,
+            "Gsw": -0.031,
+            "PhiPS2": 0.405
+          },
+          {
+            "GrainWeight": 0.6252,
+            "Gsw": -0.0639,
+            "PhiPS2": 0.399
+          }
+        ],
+        "n_in": 204,
+        "fold_fitted": true
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5371,
+          "Gsw": 0.0201,
+          "PhiPS2": 0.3535
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5564,
+            "Gsw": 0.0231,
+            "PhiPS2": 0.3612
+          },
+          {
+            "GrainWeight": 0.5275,
+            "Gsw": 0.023,
+            "PhiPS2": 0.3627
+          },
+          {
+            "GrainWeight": 0.5274,
+            "Gsw": 0.0142,
+            "PhiPS2": 0.3365
+          }
+        ],
+        "n_in": 204,
+        "fold_fitted": true
+      }
+    },
+    "sample-snv-204": {
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5222,
+          "Gsw": 0.1154,
+          "PhiPS2": 0.4758
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5266,
+            "Gsw": 0.1155,
+            "PhiPS2": 0.4758
+          },
+          {
+            "GrainWeight": 0.5176,
+            "Gsw": 0.111,
+            "PhiPS2": 0.471
+          },
+          {
+            "GrainWeight": 0.5224,
+            "Gsw": 0.1196,
+            "PhiPS2": 0.4807
+          }
+        ],
+        "n_in": 204,
+        "fold_fitted": false
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5253,
+          "Gsw": 0.0088,
+          "PhiPS2": 0.1468
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5289,
+            "Gsw": -0.0021,
+            "PhiPS2": 0.1322
+          },
+          {
+            "GrainWeight": 0.525,
+            "Gsw": 0.002,
+            "PhiPS2": 0.1209
+          },
+          {
+            "GrainWeight": 0.522,
+            "Gsw": 0.0265,
+            "PhiPS2": 0.1874
+          }
+        ],
+        "n_in": 204,
+        "fold_fitted": false
+      }
+    },
+    "fold-z-128": {
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5889,
+          "Gsw": -0.0295,
+          "PhiPS2": 0.41
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5852,
+            "Gsw": -0.0303,
+            "PhiPS2": 0.421
+          },
+          {
+            "GrainWeight": 0.5893,
+            "Gsw": -0.0231,
+            "PhiPS2": 0.4085
+          },
+          {
+            "GrainWeight": 0.5922,
+            "Gsw": -0.035,
+            "PhiPS2": 0.4005
+          }
+        ],
+        "n_in": 128,
+        "fold_fitted": true
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.52,
+          "Gsw": 0.0444,
+          "PhiPS2": 0.3758
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5191,
+            "Gsw": 0.0285,
+            "PhiPS2": 0.3814
+          },
+          {
+            "GrainWeight": 0.5024,
+            "Gsw": 0.0523,
+            "PhiPS2": 0.3781
+          },
+          {
+            "GrainWeight": 0.5384,
+            "Gsw": 0.0523,
+            "PhiPS2": 0.3679
+          }
+        ],
+        "n_in": 128,
+        "fold_fitted": true
+      }
+    },
+    "sample-snv-128": {
+      "clean-mlp": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5209,
+          "Gsw": 0.1165,
+          "PhiPS2": 0.4699
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5246,
+            "Gsw": 0.1136,
+            "PhiPS2": 0.4711
+          },
+          {
+            "GrainWeight": 0.5157,
+            "Gsw": 0.1157,
+            "PhiPS2": 0.4689
+          },
+          {
+            "GrainWeight": 0.5224,
+            "Gsw": 0.1202,
+            "PhiPS2": 0.4696
+          }
+        ],
+        "n_in": 128,
+        "fold_fitted": false
+      },
+      "dann1.0": {
+        "pooled_r2_mean_over_seeds": {
+          "GrainWeight": 0.5351,
+          "Gsw": 0.0529,
+          "PhiPS2": 0.2593
+        },
+        "per_seed_pooled": [
+          {
+            "GrainWeight": 0.5425,
+            "Gsw": 0.0517,
+            "PhiPS2": 0.2593
+          },
+          {
+            "GrainWeight": 0.5223,
+            "Gsw": 0.0536,
+            "PhiPS2": 0.2744
+          },
+          {
+            "GrainWeight": 0.5404,
+            "Gsw": 0.0535,
+            "PhiPS2": 0.2441
+          }
+        ],
+        "n_in": 128,
+        "fold_fitted": false
+      }
+    }
+  },
+  "deltas": {
+    "fold-z-204": {
+      "GrainWeight": -0.0777,
+      "Gsw": 0.0677,
+      "PhiPS2": -0.0516
+    },
+    "sample-snv-204": {
+      "GrainWeight": 0.0031,
+      "Gsw": -0.1066,
+      "PhiPS2": -0.329
+    },
+    "fold-z-128": {
+      "GrainWeight": -0.0689,
+      "Gsw": 0.0739,
+      "PhiPS2": -0.0342
+    },
+    "sample-snv-128": {
+      "GrainWeight": 0.0142,
+      "Gsw": -0.0636,
+      "PhiPS2": -0.2106
+    }
+  },
+  "per_seed_deltas": {
+    "fold-z-204": {
+      "GrainWeight": {
+        "7": -0.0561,
+        "42": -0.0792,
+        "123": -0.0978
+      },
+      "Gsw": {
+        "7": 0.0709,
+        "42": 0.054,
+        "123": 0.0781
+      },
+      "PhiPS2": {
+        "7": -0.0501,
+        "42": -0.0423,
+        "123": -0.0625
+      }
+    },
+    "sample-snv-204": {
+      "GrainWeight": {
+        "7": 0.0023,
+        "42": 0.0074,
+        "123": -0.0004
+      },
+      "Gsw": {
+        "7": -0.1176,
+        "42": -0.109,
+        "123": -0.0931
+      },
+      "PhiPS2": {
+        "7": -0.3436,
+        "42": -0.3501,
+        "123": -0.2933
+      }
+    },
+    "fold-z-128": {
+      "GrainWeight": {
+        "7": -0.0661,
+        "42": -0.0869,
+        "123": -0.0538
+      },
+      "Gsw": {
+        "7": 0.0588,
+        "42": 0.0754,
+        "123": 0.0873
+      },
+      "PhiPS2": {
+        "7": -0.0396,
+        "42": -0.0304,
+        "123": -0.0326
+      }
+    },
+    "sample-snv-128": {
+      "GrainWeight": {
+        "7": 0.0179,
+        "42": 0.0066,
+        "123": 0.018
+      },
+      "Gsw": {
+        "7": -0.0619,
+        "42": -0.0621,
+        "123": -0.0667
+      },
+      "PhiPS2": {
+        "7": -0.2118,
+        "42": -0.1945,
+        "123": -0.2255
+      }
+    }
+  },
+  "pre_registered_predictions": [
+    "Q1 R1 fold-z-204 reproduces the wave-9 delta, positive in every seed",
+    "Q2 R4 sample-snv-128 reproduces the task-25.1 delta, negative in every seed",
+    "Q3 sign follows the normalization (SNV vs fold-fitted), not the band count"
+  ]
+}

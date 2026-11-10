@@ -1,0 +1,21 @@
+{
+  "checkpoint_epoch": 34,
+  "accuracy": 0.9189189076423645,
+  "confusion_matrix": [
+    [
+      91,
+      9
+    ],
+    [
+      3,
+      45
+    ]
+  ],
+  "val_patients": [
+    "P13",
+    "P8",
+    "P10",
+    "P5"
+  ],
+  "n": 148
+}
