@@ -87,13 +87,36 @@ results/
   exploratory/  wave summary JSON + Markdown (runs_v3)
   legacy/       superseded results - NOT protocol-comparable, see results/legacy/README
 specs/          design / requirements / task breakdown for the benchmark itself
-docs/           MAINLINE_PLAN.md, EXPERIMENT_LOG.md, STATUS_FOR_CVPR2027.md,
-                REPRODUCING.md, TESTING.md
+docs/           ARCHITECTURE.md, MAINLINE_PLAN.md, EXPERIMENT_LOG.md,
+                STATUS_FOR_CVPR2027.md, REPRODUCING.md, TESTING.md
 src/            pre-benchmark scripts (SUPERSEDED), kept for provenance and for the route-A adapters
 tests/          pytest suite (unit / property / integration / audit markers)
 external/       third-party source used for reimplementation reference (see provenance)
 tools/          release packaging helper
 ```
+
+## Documentation map
+
+| document | answers |
+|---|---|
+| `docs/ARCHITECTURE.md` | how the system is put together, the six invariants it must keep, where to change what, glossary |
+| `RESULTS.md` | every measured number, organized by protocol tier, plus the known protocol-consistency issues |
+| `docs/REPRODUCING.md` | datasets, directory layout, environment, feature cache, command reference, artefact mapping |
+| `docs/TESTING.md` | how to run the suite, and the 14 tests that are bound to the audited host |
+| `docs/MAINLINE_PLAN.md` | the research plan and how it was revised, including the abandoned routes |
+| `docs/EXPERIMENT_LOG.md` | the append-only lab notebook: 12 exploratory waves and 3 code-level audits, in order |
+| `docs/STATUS_FOR_CVPR2027.md` | honest readiness assessment and gap list against a CVPR/ICML main-track submission |
+| `CONTRIBUTING.md` | the pre-registration discipline, the matched-control convention, and how to report a result |
+| `specs/design.md`, `specs/requirements.md`, `specs/tasks.md` | the full design-first specification (Chinese), including the task breakdown and the remaining backlog |
+| `configs/README.md` | frozen stage templates, hashes and hard resource budgets |
+| `tests/README.md` | marker taxonomy and the named suite commands |
+| `experiments/README.md` | a one-line verdict for each exploratory wave |
+| `results/legacy/README.md` | why the pre-benchmark numbers must never be compared with the governed ones |
+
+**Reading order.** If you want to reproduce: `README.md` → `docs/REPRODUCING.md` →
+`docs/TESTING.md`. If you want to extend: `docs/ARCHITECTURE.md` section 5 →
+`CONTRIBUTING.md` → the task-25.x runner as a worked example. If you want to know what is
+already dead: `RESULTS.md` section 3 and the negative-result table above.
 
 ## Quickstart
 
@@ -134,5 +157,7 @@ If you use this benchmark, please cite the repository (see `CITATION.cff`).
 
 Code is released under the MIT License (`LICENSE`). Third-party components under
 `external/` retain their upstream licenses. Datasets are governed by their own terms.
+
+
 
 
