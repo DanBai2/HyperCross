@@ -53,7 +53,8 @@ Copy-Filtered "$src\tests"      "$dst\tests"
 Copy-Filtered "$src\scripts"    "$dst\scripts"
 Copy-Filtered "$src\docs"       "$dst\docs"
 Copy-Filtered "$src\external"   "$dst\external"
-Copy-Filtered "$src\src"        "$dst\legacy\src"
+Copy-Filtered "$src\src"        "$dst\src"
+Copy-Filtered "$src\artifacts"   "$dst\artifacts"
 Copy-Filtered "$src\.kiro\specs\cvpr2027-hyperspectral-benchmark" "$dst\specs" -ExtraExcludeNames @('tasks.meta.json', '.config.kiro')
 
 Write-Output '== packaging metadata =='
@@ -128,4 +129,6 @@ Write-Output ("  legacy files: {0}" -f $n)
 Write-Output '== size =='
 $s = Get-ChildItem -LiteralPath $dst -Recurse -File | Measure-Object Length -Sum
 Write-Output ("  release tree: {0} files, {1} MB" -f $s.Count, [math]::Round($s.Sum / 1MB, 2))
+
+
 

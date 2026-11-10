@@ -70,7 +70,7 @@ Adversarial alignment backfills nuisance that a better representation removes fo
 | per-target representation routing | worse than a fixed representation | `runs_v3/wave12` |
 | full-fusion DANN | catastrophic (GW -0.4822) | `runs_v3/wave6` |
 | patient-adversarial Histology | harmful (BA -0.038) | `runs_v3/wave8` |
-| the legacy cross-attention module | degenerate: softmax == 1, Q/K gradients are 0 | `legacy/src/hypercross_routeA.py` |
+| the legacy cross-attention module | degenerate: softmax == 1, Q/K gradients are 0 | `src/hypercross_routeA.py` |
 
 ---
 
@@ -87,8 +87,9 @@ results/
   exploratory/  wave summary JSON + Markdown (runs_v3)
   legacy/       superseded results - NOT protocol-comparable, see results/legacy/README
 specs/          design / requirements / task breakdown for the benchmark itself
-docs/           MAINLINE_PLAN.md, EXPERIMENT_LOG.md, STATUS_FOR_CVPR2027.md
-legacy/src/     pre-benchmark scripts, superseded, kept for provenance only
+docs/           MAINLINE_PLAN.md, EXPERIMENT_LOG.md, STATUS_FOR_CVPR2027.md,
+                REPRODUCING.md, TESTING.md
+src/            pre-benchmark scripts (SUPERSEDED), kept for provenance and for the route-A adapters
 tests/          pytest suite (unit / property / integration / audit markers)
 external/       third-party source used for reimplementation reference (see provenance)
 tools/          release packaging helper
@@ -98,7 +99,7 @@ tools/          release packaging helper
 
 ```bash
 python -m pip install -e ".[dev]"
-python -m pytest -q            # GPU-free suite
+python -m pytest -q            # 441 passed; 14 host-bound guards, see docs/TESTING.md
 
 # governed HyperLeaf nested-LOVO pipeline
 python -m benchmark.cli --help
@@ -133,3 +134,5 @@ If you use this benchmark, please cite the repository (see `CITATION.cff`).
 
 Code is released under the MIT License (`LICENSE`). Third-party components under
 `external/` retain their upstream licenses. Datasets are governed by their own terms.
+
+

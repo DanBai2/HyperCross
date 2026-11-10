@@ -1,6 +1,6 @@
 # Legacy code (superseded)
 
-`legacy/src/` contains the pre-benchmark research scripts, including the original
+This directory is imported by `benchmark/` as the top-level `src` namespace package (the legacy route-A adapters need it), so it must stay at the repository root. It contains the pre-benchmark research scripts, including the original
 paper model definition (`hypercross_routeA.py`) and the remote-sensing scene
 experiments (Indian Pines / Salinas / Pavia / Houston2013, S2Mamba comparisons,
 pseudo-labelling, test-time adaptation, and so on).
@@ -18,3 +18,4 @@ Two important caveats if you read this code:
    **not** comparable to the group-disjoint LOVO / LOPO numbers in `RESULTS.md`.
 
 Kept in the release only for provenance and for anyone who wants to trace the history.
+

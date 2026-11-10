@@ -1,0 +1,181 @@
+{
+  "audit_id": "training-fast-lane-13.7",
+  "checks": {
+    "all_active_paths_on_g_drive": true,
+    "approved_roots_exist": true,
+    "conda_environment_is_tcfm": true,
+    "cuda_available": true,
+    "cuda_tensor_smoke_finite": true,
+    "device_is_rtx_5080": true,
+    "histology_first_batch_finite": true,
+    "histology_memmap_read_only": true,
+    "histology_roi_count_matches": true,
+    "hyperleaf_first_batch_finite": true,
+    "hyperleaf_test_count_matches": true,
+    "hyperleaf_total_images_match_csvs": true,
+    "hyperleaf_train_count_matches": true,
+    "output_is_workspace_relative": true,
+    "single_visible_cuda_device": true
+  },
+  "completed_utc": "2026-10-24T11:20:23.356669Z",
+  "datasets": {
+    "histology_hsi_gb": {
+      "class_counts": {
+        "non_tumor": 303,
+        "tumor": 166
+      },
+      "dataset_key": "histology-hsi-gb",
+      "first_roi_sample": {
+        "batch": {
+          "label_dtype": "torch.int64",
+          "label_shape": [
+            1
+          ],
+          "spectrum_dtype": "float32",
+          "spectrum_shape": [
+            1,
+            128
+          ],
+          "visual_dtype": "float32",
+          "visual_shape": [
+            1,
+            3,
+            64,
+            64
+          ]
+        },
+        "raw_access": "read_only_memmap_sparse_12x128x16",
+        "raw_cube_dtype": "uint16",
+        "raw_cube_shape": [
+          800,
+          826,
+          1004
+        ],
+        "sample_ref": "P1/ROI_01_C01_T"
+      },
+      "patient_count": 13,
+      "roi_sample_count": 469
+    },
+    "hyperleaf2024": {
+      "dataset_key": "hyperleaf2024",
+      "first_train_sample": {
+        "batch": {
+          "spectrum_dtype": "float32",
+          "spectrum_shape": [
+            1,
+            128
+          ],
+          "target_dtype": "float32",
+          "target_shape": [
+            1,
+            3
+          ],
+          "visual_dtype": "float32",
+          "visual_shape": [
+            1,
+            3,
+            32,
+            64
+          ]
+        },
+        "raw_cube_dtype": "uint16",
+        "raw_cube_shape": [
+          204,
+          48,
+          352
+        ],
+        "sample_id": "00000"
+      },
+      "image_file_count": 2410,
+      "official_test_labels_read": false,
+      "official_test_sample_count": 820,
+      "train_sample_count": 1590
+    }
+  },
+  "environment": {
+    "conda_environment": "TCFM",
+    "cuda_tensor_smoke": {
+      "checksum": 3680.0,
+      "finite": true,
+      "input_dtype": "torch.float32",
+      "input_shape": [
+        4,
+        4
+      ],
+      "output_dtype": "torch.float32",
+      "output_shape": [
+        4,
+        4
+      ],
+      "peak_allocated_bytes": 8522752
+    },
+    "cudnn_version": 91900,
+    "dependencies": {
+      "Pillow": "11.3.0",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pydantic": "2.14.1",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.15.3",
+      "tifffile": "2025.5.10",
+      "torch": "2.11.0+cu128"
+    },
+    "device": {
+      "compute_capability": [
+        12,
+        0
+      ],
+      "free_memory_after_smoke_bytes": 15511584768,
+      "free_memory_before_smoke_bytes": 15587082240,
+      "index": 0,
+      "multiprocessor_count": 84,
+      "name": "NVIDIA GeForce RTX 5080",
+      "total_memory_bytes": 17094475776
+    },
+    "python_executable": "C:\\Users\\win10\\.conda\\envs\\TCFM\\python.exe",
+    "python_implementation": "CPython",
+    "torch_cuda_build": "12.8"
+  },
+  "environment_lock": {
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "cuda_version": "12.8",
+    "device_identity": "cuda:0:NVIDIA GeForce RTX 5080",
+    "lock_hash": "a381dbcd2b3aaf8723b92ce4ed7f44c95d039ff46c04e8d343b82c88eb36a275",
+    "numpy_version": "2.2.6",
+    "pandas_version": "2.3.3",
+    "pillow_version": "11.3.0",
+    "python_version": "3.10.20",
+    "pytorch_version": "2.11.0+cu128",
+    "scipy_version": "1.15.3",
+    "sklearn_version": "1.7.2",
+    "tifffile_version": "2025.5.10"
+  },
+  "long_training_started": false,
+  "report_sha256": "c1a28114d96d31c3c3acfb47bc59096faf852ecd2a8f4e31b8fdf5a6a8c2e0fa",
+  "requirements": [
+    "2.10",
+    "2.18",
+    "14.1-14.14",
+    "17.15-17.24",
+    "17.39",
+    "17.40"
+  ],
+  "schema_version": "1.0.0",
+  "scope": {
+    "active_f_drive_paths": [],
+    "external_references_followed": false,
+    "historical_f_drive_references_policy": "ignored_not_resolved",
+    "output_artifact_ref": "artifacts/audit/training_fast_lane_audit.json",
+    "read_roots": [
+      "G:\\Datasets\\HyperCross",
+      "G:\\Datasets\\HyperLeaf2024",
+      "G:\\Datasets\\PKG - HistologyHSI-GB"
+    ],
+    "workspace": "G:\\Datasets\\HyperCross",
+    "write_root": "G:\\Datasets\\HyperCross\\artifacts\\audit"
+  },
+  "started_utc": "2026-10-24T11:20:22.351303Z",
+  "status": "pass",
+  "task_id": "13.7"
+}

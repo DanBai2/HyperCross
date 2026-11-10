@@ -26,7 +26,14 @@ cache_leaf_*
 /runs/
 /runs_v2/
 /runs_v3/
-/artifacts/
+/artifacts/predictions/*
+!/artifacts/predictions/.gitkeep
+/artifacts/aggregates/*
+!/artifacts/aggregates/.gitkeep
+/artifacts/transforms/*
+!/artifacts/transforms/.gitkeep
+/artifacts/publication/*
+!/artifacts/publication/.gitkeep
 /.tmp/
 
 # ---------------------------------------------------------------
@@ -57,3 +64,10 @@ Thumbs.db
 # Exception: small model-output caches that are released as evidence
 # ---------------------------------------------------------------
 !results/exploratory/**/*.npz
+
+
+.pytest_tmp/
+.tmp/
+
+.hypothesis/
+
